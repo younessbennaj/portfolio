@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="568px" viewBox="0 0 320 568" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>GoldenCanonGrid-320</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square" opacity="0.300000012">
+        <g id="GoldenCanonGrid-320" stroke="#000000">
+            <g id="Grid">
+                <g id="Group-2" opacity="0.200000003">
+                    <path d="M0,0 L319.786094,568" id="Line"></path>
+                    <path d="M0,0 L319.786094,568" id="Line" transform="translate(159.893047, 284.000000) scale(-1, 1) translate(-159.893047, -284.000000) "></path>
+                </g>
+                <g id="Group" opacity="0.200000003">
+                    <path d="M0,0 L159.893047,568" id="Line"></path>
+                    <path d="M0,0 L159.893047,568" id="Line" transform="translate(79.946523, 284.000000) scale(-1, 1) translate(-79.946523, -284.000000) "></path>
+                </g>
+                <g id="Group" opacity="0.200000003">
+                    <path d="M0,0 L79.9465234,568" id="Line"></path>
+                    <path d="M0,0 L79.9465234,568" id="Line" transform="translate(39.973262, 284.000000) scale(-1, 1) translate(-39.973262, -284.000000) "></path>
+                </g>
+                <g id="Group" transform="translate(160.000000, 0.000000)" opacity="0.200000003">
+                    <path d="M2.84217094e-14,0 L79.9465234,568" id="Line"></path>
+                    <path d="M8.52651283e-14,0 L79.9465234,568" id="Line" transform="translate(39.973262, 284.000000) scale(-1, 1) translate(-39.973262, -284.000000) "></path>
+                </g>
+                <g id="Group" transform="translate(81.000000, 0.000000)" opacity="0.200000003">
+                    <path d="M0,0 L78.9471919,568" id="Line"></path>
+                    <path d="M2.84217094e-14,0 L78.9471919,568" id="Line" transform="translate(39.473596, 284.000000) scale(-1, 1) translate(-39.473596, -284.000000) "></path>
+                </g>
+                <g id="Group" transform="translate(240.000000, 0.000000)" opacity="0.200000003">
+                    <path d="M5.68434189e-14,0 L79.9465234,568" id="Line"></path>
+                    <path d="M5.68434189e-14,0 L79.9465234,568" id="Line" transform="translate(39.973262, 284.000000) scale(-1, 1) translate(-39.973262, -284.000000) "></path>
+                </g>
+                <g id="Group" transform="translate(160.000000, 0.000000)" opacity="0.200000003">
+                    <path d="M2.84217094e-14,0 L159.893047,568" id="Line"></path>
+                    <path d="M5.68434189e-14,0 L159.893047,568" id="Line" transform="translate(79.946523, 284.000000) scale(-1, 1) translate(-79.946523, -284.000000) "></path>
+                </g>
+                <path d="M0,283.5 L320,283.5" id="Line" opacity="0.200000003"></path>
+                <path d="M0,189.5 L320,189.5" id="Line" opacity="0.200000003"></path>
+                <path d="M0,379.5 L320,379.5" id="Line" opacity="0.200000003"></path>
+                <path d="M0,454.5 L320,454.5" id="Line" opacity="0.200000003"></path>
+                <path d="M0,113.5 L320,113.5" id="Line" opacity="0.200000003"></path>
+                <path d="M160.25,0 L160.25,568" id="Line" opacity="0.200000003"></path>
+                <g id="Group-3" transform="translate(64.000000, 0.000000)" opacity="0.200000003">
+                    <path d="M0.254495366,0 L0.254495366,568" id="Line"></path>
+                </g>
+                <g id="Group-3" transform="translate(255.500000, 284.000000) scale(-1, 1) translate(-255.500000, -284.000000) translate(255.000000, 0.000000)" opacity="0.200000003">
+                    <path d="M0.479344963,0 L0.479344963,568" id="Line"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

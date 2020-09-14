@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080" xml:space="preserve">
+<title>Desktop</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Desktop">
+		<rect id="Rectangle" y="-0.5" fill="#303346" width="480" height="541"/>
+		<rect id="Rectangle_1_" x="480" y="-0.5" fill="#D1C7B2" width="1440" height="720"/>
+		
+			<text transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 1791 413.5)" fill="#FFFFFF" font-family="'HelveticaNeue'" font-size="12">A freebie made by Bont</text>
+		<text transform="matrix(1 0 0 1 383 63.5)" fill="#FFFFFF" font-family="'HelveticaNeue'" font-size="12">Designed by Adrián Somoza</text>
+		<text transform="matrix(1 0 0 1 58 781.5)" fill="#303346" font-family="'HelveticaNeue'" font-size="12">The Golden Canon</text>
+		
+			<text transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 61.5 53)" fill="#FFFFFF" font-family="'HelveticaNeue'" font-size="12">Mother of grids</text>
+		
+			<text transform="matrix(1 0 0 1 399.509 1011.5)" fill="#303346" font-family="'HelveticaNeue-Bold'" font-size="286" letter-spacing="-15"> </text>
+		<g id="GoldenCanonGrid-specs-1920">
+			<g id="Grid_1_">
+				<g id="Group-3" transform="translate(0.000000, 1.000000)" opacity="0.5">
+					<path id="Line" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="M1.2,1.1
+						l1916.5,1076.8"/>
+					<path id="Line_1_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M1.2,1077.9L1917.7,1.1"/>
+				</g>
+				<g id="Group-3_1_" transform="translate(959.421687, 1.000000)" opacity="0.5">
+					<path id="Line_2_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.6,1.1l958.3,1076.8"/>
+					<path id="Line_3_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.6,1077.9L958.8,1.1"/>
+				</g>
+				<g id="Group-3_2_" transform="translate(0.000000, 1.000000)" opacity="0.5">
+					<path id="Line_4_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.6,1.1l958.3,1076.8"/>
+					<path id="Line_5_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.6,1077.9L958.8,1.1"/>
+				</g>
+				<g id="Group-3_3_" opacity="0.5">
+					<path id="SVGID_x5F_1_x5F_" fill="none" d="M0.3,1.1l479.4,1077.8"/>
+					<text>					<textPath  xlink:href="#SVGID_x5F_1_x5F_" startOffset="56.9641%">
+<tspan  font-family="'MyriadPro-Regular'" font-size="12">Grid</tspan>					</textPath>
+</text>
+					<path id="Line_7_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.3,1078.9L479.7,1.1"/>
+				</g>
+				<g id="Group-3_4_" transform="translate(479.000000, 0.000000)" opacity="0.5">
+					<path id="Line_8_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.3,1.1l479.1,1077.8"/>
+					<path id="Line_9_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.3,1078.9L479.4,1.1"/>
+				</g>
+				<g id="Group-3_5_" transform="translate(960.000000, 0.000000)" opacity="0.5">
+					<path id="Line_10_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.3,1.1l478.1,1077.8"/>
+					<path id="Line_11_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.3,1078.9L478.4,1.1"/>
+				</g>
+				<g id="Group-3_6_" transform="translate(1439.000000, 0.000000)" opacity="0.5">
+					<path id="Line_12_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.3,1.1l479.1,1077.8"/>
+					<path id="Line_13_" opacity="0.2" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+						M0.3,1078.9L479.4,1.1"/>
+				</g>
+				<path id="Line_14_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M959.4,0.5v1080"/>
+				<path id="Line_15_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M479.4,0.5v1080"/>
+				<path id="Line_16_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M716.3,0.5v1080"/>
+				<path id="Line_17_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M1199.3,0.5v1080"/>
+				<path id="Line_18_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M238.3,0.5v1080"/>
+				<path id="Line_19_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M1678.3,0.5v1080"/>
+				<path id="Line_20_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M1438.8,0.5v1080"/>
+				<path id="Line_21_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M0,216.5h1918.8"/>
+				<path id="Line_22_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M0,864.7h1918.8"/>
+				<path id="Line_23_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M0,719.7h1918.8"/>
+				<path id="Line_24_" opacity="0.1" fill="none" stroke="#000000" stroke-linecap="square" enable-background="new    " d="
+					M0,359.7h1918.8"/>
+			</g>
+		</g>
+		
+			<text transform="matrix(1 0 0 1 46.9998 1008.5002)" fill="#303346" font-family="'HelveticaNeue-Bold'" font-size="280" letter-spacing="-14">Grid</text>
+	</g>
+</g>
+</svg>
