@@ -8,14 +8,13 @@ const App = () => {
         <div className="container">
             <div className="grid">
                 <div className="text">
-                    <h1>Lorem Ipsum</h1>
+                    <h2>youness bennaj</h2>
+                    <h1>JavaScript & React Developer</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis rem saepe, dolorum tempora magnam dignissimos eaque ipsa veniam aut pariatur dolore reiciendis, autem culpa eos amet qui dolorem at fugiat!</p>
                     <button>Button text</button>
                 </div>
 
-                <div className="image">
-                    <img src="https://via.placeholder.com/500x700" alt="" />
-                </div>
+                <img className="image" src="https://via.placeholder.com/500x700" alt="" />
             </div>
         </div>
     );
