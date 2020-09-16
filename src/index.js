@@ -5,11 +5,19 @@ import "./style.scss";
 
 const App = () => {
     return (
-        <>
+        <div className="container">
             <header className="navbar">
-                <a href="#">click</a>
+                <a href="#menu" className="navbar__btn">menu</a>
+                <nav id="menu" className="navigation">
+                    <a href="#" className="navigation__close">close</a>
+                    <ul className="navigation__list">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
             </header>
-            <div className="container">
+            <div className="main">
                 <div className="grid">
                     <div className="text">
                         <h2>youness bennaj</h2>
@@ -21,7 +29,7 @@ const App = () => {
                     <img className="image" src="https://via.placeholder.com/500x700" alt="" />
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
