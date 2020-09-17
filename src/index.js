@@ -22,12 +22,11 @@ const App = () => {
             <div className="main">
                 <div className="grid">
                     <div className="text">
-                        <h2>youness bennaj</h2>
-                        <h1>JavaScript & React Developer</h1>
+                        <h2>👋, I'm Youness Bennaj</h2>
+                        <h1>A <span className="blue">JavaScript</span> & <span className="blue">React</span> Developer</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis rem saepe, dolorum tempora magnam dignissimos eaque ipsa veniam aut pariatur dolore reiciendis, autem culpa eos amet qui dolorem at fugiat!</p>
-                        <button>Button text</button>
+                        <button>Get in touch 😉</button>
                     </div>
-
                     <img className="image" src="https://via.placeholder.com/500x700" alt="" />
                 </div>
             </div>
