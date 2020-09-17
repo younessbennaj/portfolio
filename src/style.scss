@@ -1,4 +1,5 @@
 @import "base";
+@import "animations";
 
 body {
     font-family: Gothic A1, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial,sans-serif;
@@ -51,20 +52,40 @@ body {
     }
 
     nav#menu {
-        display: none;
+       
+        height: 0px;
 
-        a {
-            
+        .navigation__list {
+            opacity: 0;
+            transition: ease;
+            transition-duration: 1s;
+            transition-property: opacity;
         }
     }
 
     nav#menu:target {
-        display: flex;
+        height: 100vh;
+
+        .navigation__list {
+
+                opacity: 1;
+                transition: ease;
+                transition-duration: 1s;
+                transition-property: opacity;
+
+              a {
+                -webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	            animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+              }
+
+        }
     }
 
 }
 
 .navigation {
+    display: flex;
+    overflow: hidden;
        flex-direction: column;
        justify-content: center;
        align-items: center;
@@ -72,14 +93,19 @@ body {
         top: 0;
         left: 0;
         bottom: 0;
-        height: 100vh;
+        //height: 100vh;
         width: 100vw;
         background-color: $dark-grey;
         color: $black;
+        transition: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        transition-duration: 0.5s;
 
     &__list {
         padding: 0;
-       list-style-type: none;
+        list-style-type: none;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+        transition-duration: 0.7s;
+        transition-delay: 0.5s;
 
        a {
            box-sizing: border-box;
@@ -152,8 +178,6 @@ body {
         }
     }
 
-    
-
     button {
         padding: 1em 2em;
         background: transparent;
@@ -162,6 +186,7 @@ body {
         border-radius: 2em;
         cursor: pointer;
         margin-top: 2em;
+        animation: wobble-hor-bottom 0.8s both;
 
         @media screen and (min-width: 320px) {
             margin-top: 1em;
