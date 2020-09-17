@@ -27,13 +27,41 @@ body {
 
 // NAVBAR
 
+.burger {
+    background-color: black;
+    height: 3px;
+    width: 40%;
+    position: relative;
+    opacity: 50%;
+
+    &:before {
+        content: "";
+        background-color: black;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        top: -7px;
+        left: 0;
+    }
+
+    &:after {
+        content: "";
+        background-color: black;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        top: 7px;
+        left: 0;
+    }
+}
+
 .navbar {
     z-index: 1;
     position: fixed;
     right: 0;
-    height: 4em;
-    width: 4em;
-    background: $dark-grey;
+    height: 3em;
+    width: 3em;
+    background: #4d4d4d36;
     border-radius: 50%;
     margin-top: 1em;
     margin-right: 1em;
@@ -95,8 +123,7 @@ body {
         bottom: 0;
         //height: 100vh;
         width: 100vw;
-        background-color: $dark-grey;
-        color: $black;
+        background-color: $black;
         transition: cubic-bezier(0.250, 0.460, 0.450, 0.940);
         transition-duration: 0.5s;
 
@@ -187,6 +214,10 @@ body {
         cursor: pointer;
         margin-top: 2em;
         animation: wobble-hor-bottom 0.8s both;
+
+        &:hover {
+
+        }
 
         @media screen and (min-width: 320px) {
             margin-top: 1em;

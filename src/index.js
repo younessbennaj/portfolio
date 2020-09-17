@@ -7,7 +7,9 @@ const App = () => {
     return (
         <div className="container">
             <header className="navbar">
-                <a href="#menu" className="navbar__btn">menu</a>
+                <a href="#menu" className="navbar__btn">
+                    <span className="burger"></span>
+                </a>
                 <nav id="menu" className="navigation">
                     <a href="#" className="navigation__close">close</a>
                     <ul className="navigation__list">
