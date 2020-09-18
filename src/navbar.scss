@@ -1,0 +1,184 @@
+// NAVBAR
+
+.navbar {
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    height: 3em;
+    width: 3em;
+    //background: #4169e152;
+    border-radius: 50%;
+    margin-top: 1em;
+    margin-right: 1em;
+
+    //Disable navigation desktop on mobile devices
+    .navigation-desktop {
+        display: none;
+    }
+
+    &__burger-icon {
+
+        background-color: black;
+        height: 3px;
+        width: 40%;
+        position: relative;
+        // opacity: 50%;
+        
+        &:before {
+            content: "";
+            background-color: black;
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            top: -7px;
+            left: 0;
+        }
+    
+        &:after {
+            content: "";
+            background-color: black;
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            top: 7px;
+            left: 0;
+        }
+    }
+
+    &__toggle-btn {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        text-decoration: none;
+        color: $black;
+        cursor: pointer;
+    }
+
+    .navigation-mobile {
+        display: flex;
+        overflow: hidden;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            //height: 100vh;
+            width: 100vw;
+            background-color: royalblue;
+            transition: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            transition-duration: 0.5s;
+    
+        &__list {
+            padding: 0;
+            list-style-type: none;
+            transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+            transition-duration: 0.7s;
+            transition-delay: 0.5s;
+    
+           a {
+               box-sizing: border-box;
+               width: 100%;
+                text-align: center;
+               cursor: pointer;
+               display: inline-block;
+               color: white;
+               text-decoration: none;
+               font-size: 3em;
+               padding: 0.5em;
+           }
+        }
+    }
+
+    nav#menu-mobile {
+       
+        height: 0px;
+
+        .navigation__list {
+            opacity: 0;
+            transition: ease;
+            transition-duration: 1s;
+            transition-property: opacity;
+        }
+    }
+
+    nav#menu-mobile:target {
+        height: 100vh;
+
+        .navigation__list {
+
+                opacity: 1;
+                transition: ease;
+                transition-duration: 1s;
+                transition-property: opacity;
+
+              a {
+                -webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	            animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+              }
+
+        }
+    }
+
+    //Desktop devices style
+    @media screen and (min-width: 1200px) {
+        height: 10vh;
+        width: 100vw;
+        border-radius: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        background: white;
+
+        @include shadow-dreamy;
+
+        .navigation-desktop {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            &__list {
+                list-style-type: none;
+                padding-left: 0;
+                // padding-right: 2em;
+
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        padding: 0 1em;
+                        font-size: 1.2em;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //Mobile style to disable or overide 
+        .navigation-mobile {
+            display: none;
+        }
+
+        &__toggle-btn {
+            display: none;
+        }
+    
+        span {
+            display: none;
+        }
+    }
+
+}

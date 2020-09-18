@@ -1,0 +1,144 @@
+// HERO SECTION
+@import "breakpoints";
+
+.hero {
+
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 2em;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: $black;
+    //background: linear-gradient(185deg, #fff0 80%, #000000d6 80%);
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 10vh;
+        min-height: 90vh;
+        height: 90vh;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    &__grid {
+
+        display: block;
+        height: 100%;
+        width: 100%;
+    
+        @media screen and (min-width: 1200px) {
+            display: grid;
+            overflow: hidden;
+            grid-template-columns: repeat(12, 1fr);
+            padding: 1em;
+        }
+    
+    }
+
+    &__text {
+        
+        margin-top: 3em;
+        width: 100%;
+        height: max-content;
+        
+        @media screen and (min-width: 1200px) {
+            margin-top: 10%;
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+    
+        .blue {
+            text-decoration: underline;
+            text-decoration-color: royalblue;
+        }
+
+    }
+
+    &__title {
+
+        margin: 0;
+        font-size: 2.4em;
+        line-height: 1.3em;
+
+    }
+
+    &__paragraph {
+
+        font-size: 1.4em;
+        line-height: 1.8;
+        color: $dark-grey;
+        
+
+        @include desktop {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        
+    }
+
+    &__btn {
+        
+        padding: 1em 2em;
+        //background: royalblue;
+        border: 2px solid black;
+        color: black;
+        font-weight: bold;
+        border: 2px solid black;
+        font-size: 1em;
+        background-color: transparent;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-top: 2em;
+        animation: wobble-hor-bottom 0.8s;
+        animation-delay: 1s;
+    
+        //@include radial-out;
+
+        @media screen and (min-width: 320px) {
+            margin-top: 1em;
+            margin-right: 1em;
+        }
+        
+    }
+
+    &__image {
+        display: none;
+        
+        //width: 100%;
+        //transform: translate(12%);
+    
+        @include shadow-dreamy;
+    
+        @media screen and (min-width: 1200px) {
+            display: block;
+            grid-column-start: 7;
+            grid-column-end: 13;
+            justify-self: center;
+            width: 70%;
+            height: 80%;
+            margin-top: 10%;
+            grid-row-start: 1;
+            z-index: 0;
+            //transform: translate(0%);
+        }
+    
+    }
+
+    h2 {
+        display: none;
+
+        @include desktop {
+            display: block;
+            height: max-content;
+            grid-row-start: 1;
+            grid-column-start: 7;
+            grid-column-end: 13;
+            z-index: 1;
+            font-size: 7em;
+            margin: 0;
+            justify-self: center;
+        }
+    }
+}
