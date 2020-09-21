@@ -41,6 +41,27 @@ const App = () => {
                     <img className="hero__image" src={wave} alt="" />
                 </div>
             </main>
+            <section id="portfolio" className="portfolio">
+                <h2>My Work</h2>
+                <div className="portfolio__card">
+                    <img className="portfolio__image" src="https://via.placeholder.com/450x600" alt="" />
+                    <h4 className="portfolio__title">Title Project - Short description here</h4>
+                    <p className="portfolio__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate hic officia necessitatibus nisi! Officiis rem mollitia iusto corporis eligendi, earum odio perferendis quisquam saepe nisi voluptatum nesciunt est sequi facilis!</p>
+                    <button className="portfolio__btn"><span>view on github →</span></button>
+                </div>
+                <div className="portfolio__card">
+                    <img className="portfolio__image" src="https://via.placeholder.com/450x600" alt="" />
+                    <h4 className="portfolio__title">Title Project - Short description here</h4>
+                    <p className="portfolio__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate hic officia necessitatibus nisi! Officiis rem mollitia iusto corporis eligendi, earum odio perferendis quisquam saepe nisi voluptatum nesciunt est sequi facilis!</p>
+                    <button className="portfolio__btn"><span>view on github →</span></button>
+                </div>
+                <div className="portfolio__card">
+                    <img className="portfolio__image" src="https://via.placeholder.com/450x600" alt="" />
+                    <h4 className="portfolio__title">Title Project - Short description here</h4>
+                    <p className="portfolio__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate hic officia necessitatibus nisi! Officiis rem mollitia iusto corporis eligendi, earum odio perferendis quisquam saepe nisi voluptatum nesciunt est sequi facilis!</p>
+                    <button className="portfolio__btn"><span>view on github →</span></button>
+                </div>
+            </section>
         </div>
     );
 }
