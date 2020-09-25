@@ -10,6 +10,8 @@ import "./style.scss";
 const App = () => {
     return (
         <div className="container">
+
+            {/* NAVBAR */}
             <header className="navbar">
                 <a href="#menu-mobile" className="navbar__toggle-btn">
                     <span className="navbar__burger-icon"></span>
@@ -32,6 +34,8 @@ const App = () => {
                     </ul>
                 </nav>
             </header>
+
+            {/* HERO SECTION */}
             <main className="hero">
                 <div className="content">
                     <h1 className="hero__title">I'm Youness Bennaj,<br /> a JavaScript Developer.</h1>
@@ -40,26 +44,24 @@ const App = () => {
                 <div className="image">
                 </div>
             </main>
-            <section id="portfolio" className="portfolio">
-                <h2>My Work</h2>
-                <div className="portfolio__card">
-                    <img className="portfolio__image" src="https://via.placeholder.com/450x600" alt="" />
-                    <h4 className="portfolio__title">Title Project - Short description here</h4>
-                    <p className="portfolio__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate hic officia necessitatibus nisi! Officiis rem mollitia iusto corporis eligendi, earum odio perferendis quisquam saepe nisi voluptatum nesciunt est sequi facilis!</p>
-                    <button className="portfolio__btn"><span>view on github →</span></button>
+
+            {/* STUDIES SECTION */}
+            <section className="studies">
+
+                <h2 className="studies__title">What kind of subject did I study ?</h2>
+
+                <div className="studies__item">
+                    <h4>Sed ut perspiciatis</h4>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                    <button>Learn more</button>
                 </div>
-                <div className="portfolio__card">
-                    <img className="portfolio__image" src="https://via.placeholder.com/450x600" alt="" />
-                    <h4 className="portfolio__title">Title Project - Short description here</h4>
-                    <p className="portfolio__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate hic officia necessitatibus nisi! Officiis rem mollitia iusto corporis eligendi, earum odio perferendis quisquam saepe nisi voluptatum nesciunt est sequi facilis!</p>
-                    <button className="portfolio__btn"><span>view on github →</span></button>
+
+                <div className="studies__item">
+                    <h4>Lorem ipsum dolor</h4>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                    <button>Learn more</button>
                 </div>
-                <div className="portfolio__card">
-                    <img className="portfolio__image" src="https://via.placeholder.com/450x600" alt="" />
-                    <h4 className="portfolio__title">Title Project - Short description here</h4>
-                    <p className="portfolio__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate hic officia necessitatibus nisi! Officiis rem mollitia iusto corporis eligendi, earum odio perferendis quisquam saepe nisi voluptatum nesciunt est sequi facilis!</p>
-                    <button className="portfolio__btn"><span>view on github →</span></button>
-                </div>
+
             </section>
         </div>
     );
