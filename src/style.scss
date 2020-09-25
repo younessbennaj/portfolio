@@ -101,6 +101,11 @@ body {
     box-sizing: border-box;
     padding-top: 150px;
 
+    p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     &__items {
        display: grid; 
        grid-template-columns: repeat(4, 1fr);
@@ -116,5 +121,49 @@ body {
         height: 76px;
         width: 100%;
         background-color: #f5f5f5;
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 90px 144px 90px 80px;
+    background-color: #F5F5F5;
+
+    button {
+        height: 52px;
+        width: 192px; 
+        font-size: 17px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: transparent;
+        display: inline-block;
+        margin-left: 45px;
+    }
+}
+
+.portfolio {
+    padding: 120px 80px 280px 80px;
+
+    &__subtitle {
+        width: 90%;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 84px;
+    }
+}
+
+.portfolio-card {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+    img {
+        width: 100%;
+    }
+
+    &__content {
+        padding: 70px 64px;
     }
 }

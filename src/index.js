@@ -92,6 +92,42 @@ const App = () => {
                     <div className="skills__item"><img src="" alt="" /></div>
                 </div>
             </section>
+
+            {/* CONTACT SECTION */}
+            <section className="contact">
+                <p className="title-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <button>My resume</button>
+                <button>Contact me</button>
+            </section>
+
+            {/* PORTFOLIO SECTION */}
+            <section className="portfolio">
+                <h2 className="title-2">You can check my differents projects</h2>
+                <p className="title-3 portfolio__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <div className="portfolio__items">
+                    <div className="portfolio-card">
+                        <img src="https://via.placeholder.com/430x275" alt="" />
+                        <div className="portfolio-card__content">
+                            <h6 className="title-4">Sed ut perspiciatis</h6>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                        </div>
+                    </div>
+                    <div className="portfolio-card">
+                        <img src="https://via.placeholder.com/430x275" alt="" />
+                        <div className="portfolio-card__content">
+                            <h6 className="title-4">Sed ut perspiciatis</h6>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                        </div>
+                    </div>
+                    <div className="portfolio-card">
+                        <img src="https://via.placeholder.com/430x275" alt="" />
+                        <div className="portfolio-card__content">
+                            <h6 className="title-4">Sed ut perspiciatis</h6>
+                            <p className="paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
