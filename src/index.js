@@ -34,10 +34,10 @@ const App = () => {
             </header>
             <main className="hero">
                 <div className="content">
-                    <h1 className="hero__title">Hi 👋 ! I'm Youness Bennaj, a <span className="blue">JavaScript</span> & <span className="blue">React</span> Developer based in Paris.</h1>
-                    <p className="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis rem saepe, dolorum tempora magnam dignissimos eaque ipsa veniam aut pariatur dolore reiciendis, autem culpa eos amet qui dolorem at fugiat!</p>
+                    <h1 className="hero__title">I'm Youness Bennaj,<br /> a JavaScript Developer.</h1>
                     <button className="hero__btn">Get in touch</button>
-                    <hr />
+                </div>
+                <div className="image">
                 </div>
             </main>
             <section id="portfolio" className="portfolio">
