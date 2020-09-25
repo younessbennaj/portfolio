@@ -129,15 +129,13 @@
 
     //Desktop devices style
     @media screen and (min-width: 1200px) {
-        height: 10vh;
+        height: 60px;
         width: 100vw;
         border-radius: 0;
         margin: 0;
         display: flex;
         justify-content: flex-end;
         background: white;
-
-        @include shadow-dreamy;
 
         .navigation-desktop {
             height: 100%;
@@ -156,7 +154,7 @@
 
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: #2196f3;
                         padding: 0 1em;
                         font-size: 1.2em;
 

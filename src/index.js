@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import wave from "../assets/wave.jpg";
+import heroBg from "../assets/hero-bg.jpg";
+import profile from "../assets/me.jpg";
 
 import "./style.scss";
 
@@ -31,14 +33,11 @@ const App = () => {
                 </nav>
             </header>
             <main className="hero">
-                <div className="hero__grid">
-                    <div className="hero__text">
-                        <h1 className="hero__title">👋, I'm Youness. <span className="blue">JavaScript</span> & <span className="blue">React</span> Developer.</h1>
-                        <p className="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis rem saepe, dolorum tempora magnam dignissimos eaque ipsa veniam aut pariatur dolore reiciendis, autem culpa eos amet qui dolorem at fugiat!</p>
-                        <button className="hero__btn">Get in touch</button>
-                    </div>
-                    <h2>Portfolio</h2>
-                    <img className="hero__image" src={wave} alt="" />
+                <div className="content">
+                    <h1 className="hero__title">Hi 👋 ! I'm Youness Bennaj, a <span className="blue">JavaScript</span> & <span className="blue">React</span> Developer based in Paris.</h1>
+                    <p className="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis rem saepe, dolorum tempora magnam dignissimos eaque ipsa veniam aut pariatur dolore reiciendis, autem culpa eos amet qui dolorem at fugiat!</p>
+                    <button className="hero__btn">Get in touch</button>
+                    <hr />
                 </div>
             </main>
             <section id="portfolio" className="portfolio">
