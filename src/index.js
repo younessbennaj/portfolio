@@ -51,17 +51,46 @@ const App = () => {
                 <h2 className="studies__title">What kind of subject did I study ?</h2>
 
                 <div className="studies__item">
-                    <h4>Sed ut perspiciatis</h4>
+                    <h4 className="title-4">Sed ut perspiciatis</h4>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
                     <button>Learn more</button>
                 </div>
 
                 <div className="studies__item">
-                    <h4>Lorem ipsum dolor</h4>
+                    <h4 className="title-4">Lorem ipsum dolor</h4>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
                     <button>Learn more</button>
                 </div>
 
+            </section>
+
+            {/* ABOUT SECTION */}
+            <section className="about">
+                <div className="about__image">
+                    <img src="https://via.placeholder.com/750x440" alt="" />
+                </div>
+                <div className="about__content">
+                    <div>
+                        <h4 className="title-4">Sed ut perspiciatis unde omnis</h4>
+                        <p className="paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* SKILLS SECTION */}
+            <section className="skills">
+                <h2 className="title-2">Discover my differents skills</h2>
+                <p className="title-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <div className="skills__items">
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                </div>
             </section>
         </div>
     );
