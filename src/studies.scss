@@ -1,0 +1,55 @@
+.studies {
+
+    @include mobile-s {
+        padding: $margin-m;
+    }
+
+    @include tablet {
+        padding: 73px 0px 73px $margin-m;
+    }
+
+    @include laptop {
+        height: 750px;
+        box-sizing: border-box;
+        padding: 120px 0px 120px $margin-l;
+    }
+
+    &__item {
+        display: inline-block;
+        box-sizing: border-box;
+        padding-right: $margin-l;
+
+        @include mobile-s {
+            padding-right: 0;
+            display: block;
+            width: 100%;
+        }
+
+        @include tablet {
+            padding-right: $margin-l;
+            padding-right: $margin-m;
+            display: inline-block;
+            width: 50%;
+        }
+    
+        @include laptop {
+            padding-right: $margin-l;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -1.5%;
+            margin-bottom: 32px;
+        }
+
+        button {
+            padding: 1em 2em;
+            background: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+    }
+}

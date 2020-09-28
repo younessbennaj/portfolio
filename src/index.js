@@ -41,6 +41,7 @@ const App = () => {
                     <h1 className="hero__title">I'm Youness Bennaj,<br /> a JavaScript Developer.</h1>
                     <button className="hero__btn">Get in touch</button>
                 </div>
+                <hr />
                 <div className="image">
                 </div>
             </main>
@@ -48,7 +49,7 @@ const App = () => {
             {/* STUDIES SECTION */}
             <section className="studies">
 
-                <h2 className="studies__title">What kind of subject have I studied ?</h2>
+                <h2 className="title-2">What kind of subject have I studied ?</h2>
 
                 <div className="studies__item">
                     <h4 className="title-4">Sed ut perspiciatis</h4>
@@ -109,14 +110,14 @@ const App = () => {
                         <img src="https://via.placeholder.com/430x275" alt="" />
                         <div className="portfolio-card__content">
                             <h6 className="title-4">Sed ut perspiciatis</h6>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                            <p className="paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
                         </div>
                     </div>
                     <div className="portfolio-card">
                         <img src="https://via.placeholder.com/430x275" alt="" />
                         <div className="portfolio-card__content">
                             <h6 className="title-4">Sed ut perspiciatis</h6>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                            <p className="paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
                         </div>
                     </div>
                     <div className="portfolio-card">
