@@ -10,6 +10,8 @@ import "./style.scss";
 const App = () => {
     return (
         <div className="container">
+
+            {/* NAVBAR */}
             <header className="navbar">
                 <a href="#menu-mobile" className="navbar__toggle-btn">
                     <span className="navbar__burger-icon"></span>
@@ -32,35 +34,129 @@ const App = () => {
                     </ul>
                 </nav>
             </header>
+
+            {/* HERO SECTION */}
             <main className="hero">
                 <div className="content">
-                    <h1 className="hero__title">Hi 👋 ! I'm Youness Bennaj, a <span className="blue">JavaScript</span> & <span className="blue">React</span> Developer based in Paris.</h1>
-                    <p className="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis rem saepe, dolorum tempora magnam dignissimos eaque ipsa veniam aut pariatur dolore reiciendis, autem culpa eos amet qui dolorem at fugiat!</p>
+                    <h1 className="hero__title">I'm Youness Bennaj,<br /> a JavaScript Developer.</h1>
                     <button className="hero__btn">Get in touch</button>
-                    <hr />
+                </div>
+                <div className="image">
                 </div>
             </main>
-            <section id="portfolio" className="portfolio">
-                <h2>My Work</h2>
-                <div className="portfolio__card">
-                    <img className="portfolio__image" src="https://via.placeholder.com/450x600" alt="" />
-                    <h4 className="portfolio__title">Title Project - Short description here</h4>
-                    <p className="portfolio__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate hic officia necessitatibus nisi! Officiis rem mollitia iusto corporis eligendi, earum odio perferendis quisquam saepe nisi voluptatum nesciunt est sequi facilis!</p>
-                    <button className="portfolio__btn"><span>view on github →</span></button>
+
+            {/* STUDIES SECTION */}
+            <section className="studies">
+
+                <h2 className="studies__title">What kind of subject have I studied ?</h2>
+
+                <div className="studies__item">
+                    <h4 className="title-4">Sed ut perspiciatis</h4>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                    <button>Learn more</button>
                 </div>
-                <div className="portfolio__card">
-                    <img className="portfolio__image" src="https://via.placeholder.com/450x600" alt="" />
-                    <h4 className="portfolio__title">Title Project - Short description here</h4>
-                    <p className="portfolio__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate hic officia necessitatibus nisi! Officiis rem mollitia iusto corporis eligendi, earum odio perferendis quisquam saepe nisi voluptatum nesciunt est sequi facilis!</p>
-                    <button className="portfolio__btn"><span>view on github →</span></button>
+
+                <div className="studies__item">
+                    <h4 className="title-4">Lorem ipsum dolor</h4>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                    <button>Learn more</button>
                 </div>
-                <div className="portfolio__card">
-                    <img className="portfolio__image" src="https://via.placeholder.com/450x600" alt="" />
-                    <h4 className="portfolio__title">Title Project - Short description here</h4>
-                    <p className="portfolio__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate hic officia necessitatibus nisi! Officiis rem mollitia iusto corporis eligendi, earum odio perferendis quisquam saepe nisi voluptatum nesciunt est sequi facilis!</p>
-                    <button className="portfolio__btn"><span>view on github →</span></button>
+
+            </section>
+
+            {/* ABOUT SECTION */}
+            <section className="about">
+                <div className="about__image">
+                    <img src="https://via.placeholder.com/750x440" alt="" />
+                </div>
+                <div className="about__content">
+                    <div>
+                        <h4 className="title-4">Sed ut perspiciatis unde omnis</h4>
+                        <p className="paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                    </div>
                 </div>
             </section>
+
+            {/* SKILLS SECTION */}
+            <section className="skills">
+                <h2 className="title-2">Discover my differents skills</h2>
+                <p className="title-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <div className="skills__items">
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                    <div className="skills__item"><img src="" alt="" /></div>
+                </div>
+            </section>
+
+            {/* CONTACT SECTION */}
+            <section className="contact">
+                <p className="title-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <button className="btn">My resume</button>
+                <button className="btn">Contact me</button>
+            </section>
+
+            {/* PORTFOLIO SECTION */}
+            <section className="portfolio">
+                <h2 className="title-2">You can check my differents projects</h2>
+                <p className="title-3 portfolio__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <div className="portfolio__items">
+                    <div className="portfolio-card">
+                        <img src="https://via.placeholder.com/430x275" alt="" />
+                        <div className="portfolio-card__content">
+                            <h6 className="title-4">Sed ut perspiciatis</h6>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                        </div>
+                    </div>
+                    <div className="portfolio-card">
+                        <img src="https://via.placeholder.com/430x275" alt="" />
+                        <div className="portfolio-card__content">
+                            <h6 className="title-4">Sed ut perspiciatis</h6>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                        </div>
+                    </div>
+                    <div className="portfolio-card">
+                        <img src="https://via.placeholder.com/430x275" alt="" />
+                        <div className="portfolio-card__content">
+                            <h6 className="title-4">Sed ut perspiciatis</h6>
+                            <p className="paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* FOOTER */}
+
+            <footer className="footer">
+                <div className="footer__nav">
+                    <ul>
+                        <li><a href="#home"><strong>Home</strong></a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div className="footer__button-group">
+                        <button className="btn">Contact me</button>
+                        <button className="btn">My resume</button>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div className="footer__social-links">
+                    <p>© 2020 - Youness Bennaj</p>
+                    <ul>
+                        <li>Follow me:</li>
+                        <li><a href="#">twitter</a></li>
+                        <li><a href="#">github</a></li>
+                        <li><a href="#">linkedIn</a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
     );
 }
