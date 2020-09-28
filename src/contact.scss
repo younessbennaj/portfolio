@@ -1,0 +1,30 @@
+.contact {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+
+     @include tablet {
+        text-align: center;
+        flex-direction: column;
+        padding: 40px $margin-m;
+    }
+
+    @include laptop {
+        text-align: left;
+        flex-direction: row;
+        padding: 90px 144px 90px $margin-l;
+    }
+
+    button {
+
+        @include tablet {
+            margin-bottom: 30px;
+        }
+    
+        @include laptop {
+            margin-bottom: 0;
+            margin-left: 45px;
+        }
+        
+    }
+}

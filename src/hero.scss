@@ -5,10 +5,26 @@
 
     height: 960px;
     width: 100vw;
-    margin-top: 60px;
+    // margin-top: 60px;
     box-sizing: border-box;
     overflow: hidden;
-    width: 100vw;
+
+    @include tablet {
+        height: 438px;
+    }
+
+    @include laptop {
+        height: 585px;
+        margin-top: 60px;
+    }
+
+    @include laptop-l {
+        height: 822px;
+    } 
+
+    @include screen-xl {
+        height: 960px;
+    }
 
     .content {
         height: 100%;
@@ -16,10 +32,17 @@
         display: inline-flex;
         justify-content: center;
         flex-direction: column;
-        padding: 0 80px;
         box-sizing: border-box;
         overflow: auto;
         float: left;
+
+        @include tablet {
+            padding: 0 $margin-m;
+        }
+
+        @include laptop {
+            padding: 0 $margin-l;
+        }
     }
 
     .image {
@@ -32,12 +55,42 @@
 
     &__title {
 
-        @include desktop {
+        @include mobile-s {
+            font-size: 10px;
+            line-height: 36px;
+        }
+
+        @include mobile-m {
+            font-size: 12px;
+            line-height: 36px;
+        }
+
+        @include mobile-l {
+            font-size: 14px;
+            line-height: 36px;
+        }
+
+        @include tablet {
+            font-size: 25px;
+            line-height: 36px;
+        }
+
+        @include laptop {
             margin: 40px 0;
-            font-size: 56px;
-            line-height: 80px;
+            font-size: 34px;
+            line-height: 48px;
             font-weight: 400;
             letter-spacing: -1.5%;
+        }
+
+        @include laptop-l {
+            font-size: 48px;
+            line-height: 68px;
+        }
+
+        @include screen-xl {
+            font-size: 56px;
+            line-height: 80px;
         }
 
     }
@@ -61,6 +114,7 @@
     &__btn {
         
         padding: 1em 2em;
+        margin-top: 40px;
         width: 190px;
         border: 2px solid black;
         color: black;
