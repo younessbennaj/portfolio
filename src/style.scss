@@ -1,6 +1,7 @@
 @import "base";
 @import "typography";
 @import "animations";
+@import "buttons";
 @import "shadow.scss";
 @import "navbar";
 @import "hero";
@@ -18,6 +19,17 @@ body {
     padding: 0;
     margin: 0;
 
+}
+
+ul {
+    list-style: none;
+
+    li {
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
 }
 
 .container {
@@ -165,5 +177,72 @@ body {
 
     &__content {
         padding: 70px 64px;
+    }
+}
+
+// FOOTER
+
+.footer {
+
+    padding: 0 80px;
+
+    &__nav {
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 60px 0px;
+
+        ul {
+
+            margin-top: 0;
+
+            li {
+
+                padding-bottom: 8px;
+
+                a {
+
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: -1.5%;
+
+                }
+            }
+        }
+    }
+
+    &__button-group {
+
+        button {
+            display: block;
+            margin-bottom: 16px;
+        }
+
+    }
+
+    &__social-links {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 0px 120px 0px;
+
+        p {
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        ul {
+
+            li {
+
+                display: inline-block;
+                margin-left: 20px;
+
+                a {
+
+                }
+            }
+        }
     }
 }

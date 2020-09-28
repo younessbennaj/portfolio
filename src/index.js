@@ -48,7 +48,7 @@ const App = () => {
             {/* STUDIES SECTION */}
             <section className="studies">
 
-                <h2 className="studies__title">What kind of subject did I study ?</h2>
+                <h2 className="studies__title">What kind of subject have I studied ?</h2>
 
                 <div className="studies__item">
                     <h4 className="title-4">Sed ut perspiciatis</h4>
@@ -128,6 +128,35 @@ const App = () => {
                     </div>
                 </div>
             </section>
+
+            {/* FOOTER */}
+
+            <footer className="footer">
+                <div className="footer__nav">
+                    <ul>
+                        <li><a href="#home"><strong>Home</strong></a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div className="footer__button-group">
+                        <button className="btn">Contact me</button>
+                        <button className="btn">My resume</button>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div className="footer__social-links">
+                    <p>© 2020 - Youness Bennaj</p>
+                    <ul>
+                        <li>Follow me:</li>
+                        <li><a href="#">twitter</a></li>
+                        <li><a href="#">github</a></li>
+                        <li><a href="#">linkedIn</a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
     );
 }
