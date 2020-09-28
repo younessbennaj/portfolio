@@ -96,8 +96,8 @@ const App = () => {
             {/* CONTACT SECTION */}
             <section className="contact">
                 <p className="title-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                <button>My resume</button>
-                <button>Contact me</button>
+                <button className="btn">My resume</button>
+                <button className="btn">Contact me</button>
             </section>
 
             {/* PORTFOLIO SECTION */}
