@@ -1,19 +1,52 @@
 // FOOTER
 .footer {
-
-    padding: 0 $margin-l;
     background-color: #F5F5F5;
+
+    @include mobile-m {
+        padding: 0 $margin-m;
+    }
+
+    @include laptop {
+        padding: 0 $margin-l;
+    }
 
     &__nav {
 
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
+        // justify-content: flex-end;
+        // align-items: flex-start;
         padding: 60px 0px;
+
+        @include mobile-s {
+            flex-direction: column;
+            align-items: center;
+            // justify-content: space-between;
+            // align-items: flex-start;
+        }
+
+        @include mobile-m {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        @include tablet {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
 
         ul {
 
             margin-top: 0;
+            padding-left: 0;
+
+            @include mobile-s {
+                text-align: center;
+            }
+
+            @include mobile-m {
+                text-align: left;
+            }
 
             li {
 
@@ -35,7 +68,10 @@
         button {
             display: block;
             margin-bottom: 16px;
-            margin-left: 45px;
+
+            @include mobile-m {
+                margin-left: 45px;
+            }
         }
 
     }
@@ -43,10 +79,17 @@
     &__social-links {
 
         display: flex;
-        justify-content: space-between;
+
+        @include mobile-s {
+            flex-direction: column;
+
+        }
         
         @include tablet {
+            flex-direction: row;
             padding: 32px 0px 54px 0px;
+            display: flex;
+            justify-content: space-between;
         }
 
         @include laptop {
@@ -56,9 +99,19 @@
         p {
             font-weight: 300;
             font-size: 15px;
+
+            @include mobile-s {
+                padding-left: 20px;
+            }
+
+            @include tablet {
+                padding-left: 0px;
+            }
         }
 
         ul {
+
+            padding-left: 0;
 
             li {
 

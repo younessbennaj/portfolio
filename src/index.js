@@ -41,6 +41,7 @@ const App = () => {
                     <h1 className="hero__title">I'm Youness Bennaj,<br /> a JavaScript Developer.</h1>
                     <button className="hero__btn">Get in touch</button>
                 </div>
+                <hr />
                 <div className="image">
                 </div>
             </main>

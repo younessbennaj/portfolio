@@ -2,7 +2,7 @@
     text-align: center;
     padding-top: 150px;
 
-    @include tablet {
+    @include mobile-s {
         height: max-content;
         padding-bottom: 68px;
         padding-top: 68px;
@@ -25,15 +25,34 @@
 
     &__items {
        display: grid; 
-       grid-template-columns: repeat(4, 1fr);
-       grid-template-rows: repeat(2, 1fr);
-       grid-column-gap: 84px;
-       grid-row-gap: 64px;
-       width: 55%;
        margin: 0 auto;
        margin-top: $margin-l;
 
+       @include mobile-s {
+            width: 60%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            height: max-content;
+            padding-bottom: 68px;
+            padding-top: 68px;
+            grid-column-gap: 18px;
+            grid-row-gap: 18px;
+        }
+
+        @include mobile-m {
+            grid-column-gap: 21px;
+            grid-row-gap: 21px;
+        }
+
+        @include mobile-l {
+            grid-column-gap: 38px;
+            grid-row-gap: 38px;
+        }
+
         @include tablet {
+            width: 55%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             grid-column-gap: 38px;
             grid-row-gap: 30px;
        }

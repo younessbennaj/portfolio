@@ -1,5 +1,9 @@
 .studies {
 
+    @include mobile-s {
+        padding: $margin-m;
+    }
+
     @include tablet {
         padding: 73px 0px 73px $margin-m;
     }
@@ -12,12 +16,20 @@
 
     &__item {
         display: inline-block;
-        width: 50%;
         box-sizing: border-box;
         padding-right: $margin-l;
 
+        @include mobile-s {
+            padding-right: 0;
+            display: block;
+            width: 100%;
+        }
+
         @include tablet {
+            padding-right: $margin-l;
             padding-right: $margin-m;
+            display: inline-block;
+            width: 50%;
         }
     
         @include laptop {

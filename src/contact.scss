@@ -3,7 +3,7 @@
     align-items: center;
     background-color: #F5F5F5;
 
-     @include tablet {
+     @include mobile-s {
         text-align: center;
         flex-direction: column;
         padding: 40px $margin-m;
@@ -17,7 +17,7 @@
 
     button {
 
-        @include tablet {
+        @include mobile-s {
             margin-bottom: 30px;
         }
     
