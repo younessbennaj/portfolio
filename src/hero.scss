@@ -90,14 +90,14 @@
         @include mobile-s {
             font-size: 25px;
             line-height: 36px;
+            font-weight: 400;
         }
 
         @include laptop {
             margin: 40px 0;
-            font-size: 34px;
+            font-size: 32px;
             line-height: 48px;
             font-weight: 400;
-            letter-spacing: -1.5%;
         }
 
         @include laptop-l {

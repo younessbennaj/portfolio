@@ -23,10 +23,8 @@ const App = () => {
         // Content vars
         let headlineFirst = content.children[0].children[0];
         let headlineSecond = headlineFirst.nextSibling;
-        let paragraph = content.children[1];
-        let button = content.children[2];
-
-        console.log(headlineFirst, headlineSecond, paragraph, button);
+        // let paragraph = content.children[1];
+        let button = content.children[1];
 
         TweenMax.to(hero, 0, { css: { visibility: 'visible' } });
 
@@ -36,7 +34,6 @@ const App = () => {
             ease: Power3.easeOut,
             delay: .8
         }, .15, 'Start')
-            .from(paragraph, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4)
             .from(button, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.6)
 
         //Image animation 
@@ -83,7 +80,7 @@ const App = () => {
                                 <div className="hero__title-line-inner">a JavaScript Developer.</div>
                             </div>
                         </h1>
-                        <p className="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita possimus laborum earum adipisci dolores architecto perspiciatis ducimus itaque commodi est, ipsum, sit, aliquid quod! Soluta consequuntur saepe aperiam fuga beatae.</p>
+                        {/* <p className="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita possimus laborum earum adipisci dolores architecto perspiciatis ducimus itaque commodi est, ipsum, sit, aliquid quod! Soluta consequuntur saepe aperiam fuga beatae.</p> */}
                         <button className="hero__btn">Get in touch</button>
                     </div>
                 </div>
