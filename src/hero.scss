@@ -48,6 +48,7 @@
             height: 100%;
             display: inline-flex;
             justify-content: center;
+            align-items: flex-start;
             flex-direction: column;
             width: 50%;
             padding: 0 $margin-m;
@@ -69,7 +70,9 @@
         @include tablet {
             height: 100%;
             width: 50%;
-            display: inline-block;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
             box-sizing: border-box;
         }
     }

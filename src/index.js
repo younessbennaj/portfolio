@@ -39,10 +39,12 @@ const App = () => {
             <main className="hero">
                 <div className="content">
                     <h1 className="hero__title">I'm Youness Bennaj,<br /> a JavaScript Developer.</h1>
+                    <p className="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita possimus laborum earum adipisci dolores architecto perspiciatis ducimus itaque commodi est, ipsum, sit, aliquid quod! Soluta consequuntur saepe aperiam fuga beatae.</p>
                     <button className="hero__btn">Get in touch</button>
                 </div>
                 <hr />
                 <div className="image">
+                    <img src="https://via.placeholder.com/500x750" alt="" />
                 </div>
             </main>
 
