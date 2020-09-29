@@ -87,7 +87,21 @@ const App = () => {
                 <hr />
                 <div className="hero__image-container">
                     <div className="hero__image" ref={el => image = el}>
-                        <img src="https://via.placeholder.com/375x530" alt="" />
+                        {/* <img src="https://via.placeholder.com/375x530" alt="" /> */}
+                        <img 
+                            srcSet="
+                                    https://via.placeholder.com/170x256 170w,
+                                    https://via.placeholder.com/230x340 230w,
+                                    https://via.placeholder.com/320x480 320w,
+                                    https://via.placeholder.com/375x530 375w"
+                                    
+
+                            sizes=" (min-width: 1600px) 375px,
+                                    (min-width: 1440px) 320px,
+                                    (min-width: 1024px) 230px,
+                                    (min-width: 768px) 170px"
+
+                            alt="Youness Bennaj" />
                     </div>
                 </div>
             </main>
