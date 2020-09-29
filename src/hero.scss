@@ -2,7 +2,7 @@
 @import "breakpoints";
 
 .hero {
-
+    visibility: hidden;
     width: 100vw;
     box-sizing: border-box;
     overflow: hidden;
@@ -27,7 +27,7 @@
         height: 960px;
     }
 
-    .content {
+    &__content {
 
         @include mobile-s {
             text-align: center;
@@ -48,6 +48,7 @@
             height: 100%;
             display: inline-flex;
             justify-content: center;
+            align-items: flex-start;
             flex-direction: column;
             width: 50%;
             padding: 0 $margin-m;
@@ -58,8 +59,8 @@
         }
     }
 
-    .image {
-        background-color: #f5f5f5;
+    &__image-container {
+        // background-color: #f5f5f5;
 
         @include mobile-s {
             display: none;
@@ -69,24 +70,34 @@
         @include tablet {
             height: 100%;
             width: 50%;
-            display: inline-block;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
             box-sizing: border-box;
         }
     }
 
+    &__image {
+        overflow: hidden;
+    }
+
     &__title {
+
+        &-line {
+            overflow: hidden;
+        }
 
         @include mobile-s {
             font-size: 25px;
             line-height: 36px;
+            font-weight: 400;
         }
 
         @include laptop {
             margin: 40px 0;
-            font-size: 34px;
+            font-size: 32px;
             line-height: 48px;
             font-weight: 400;
-            letter-spacing: -1.5%;
         }
 
         @include laptop-l {
@@ -99,22 +110,6 @@
             line-height: 80px;
         }
 
-    }
-
-    &__paragraph {
-
-        font-size: 1.4em;
-        line-height: 1.8;
-        color: $dark-grey;
-        
-
-        @include desktop {
-            font-size: 1em;
-            line-height: 1.6;
-            font-weight: 300;
-        }
-
-        
     }
 
     &__btn {
@@ -131,52 +126,7 @@
         background-color: transparent;
         border-radius: 4px;
         cursor: pointer;
-        // animation: wobble-hor-bottom 0.8s;
-        // animation-delay: 1s;
-    
-        //@include radial-out;
-
-        @media screen and (min-width: 320px) {
-        }
         
     }
 
-    &__image {
-        display: none;
-        
-        //width: 100%;
-        //transform: translate(12%);
-    
-        @include shadow-dreamy;
-    
-        @media screen and (min-width: 1200px) {
-            display: block;
-            grid-column-start: 7;
-            grid-column-end: 13;
-            justify-self: center;
-            width: 70%;
-            height: 80%;
-            margin-top: 10%;
-            grid-row-start: 1;
-            z-index: 0;
-            //transform: translate(0%);
-        }
-    
-    }
-
-    h2 {
-        display: none;
-
-        @include desktop {
-            display: block;
-            height: max-content;
-            grid-row-start: 1;
-            grid-column-start: 7;
-            grid-column-end: 13;
-            z-index: 1;
-            font-size: 7em;
-            margin: 0;
-            justify-self: center;
-        }
-    }
 }
