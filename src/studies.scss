@@ -9,15 +9,27 @@
     }
 
     @include laptop {
-        height: 750px;
+        height: max-content;
         box-sizing: border-box;
-        padding: 120px 0px 120px $margin-l;
+        padding: 60px 0px 200px $margin-l;
     }
 
     &__item {
         display: inline-block;
         box-sizing: border-box;
         padding-right: $margin-l;
+        position: relative;
+        height: 245px;
+        width: 500px;
+
+        &-inner {
+            position: absolute;
+            width: 100%;
+            padding-right: 80px;
+            box-sizing: border-box;
+            bottom: -300px;
+            opacity: 0;
+        }
 
         @include mobile-s {
             padding-right: 0;
