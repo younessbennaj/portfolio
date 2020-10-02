@@ -34,7 +34,7 @@ const Studies = () => {
             tl.from(innerHeadline, 1, {
                 y: 80,
                 ease: Power3.easeOut,
-                delay: 1.2
+                delay: .8
             }, .15, 'Start')
                 .staggerFrom([item1, item2], .8, { y: 800, opacity: 0, ease: Power3.easeOut }, .15)
         } else {
