@@ -12,6 +12,7 @@ import profile from "../assets/me.jpg";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Studies from "./components/Studies";
+import About from "./components/About";
 
 import "./style.scss";
 
@@ -24,19 +25,7 @@ const App = () => {
             <Navbar />
             <Hero />
             <Studies />
-
-            {/* ABOUT SECTION */}
-            <section className="about">
-                <div className="about__image">
-                    <img src="https://via.placeholder.com/750x440" alt="" />
-                </div>
-                <div className="about__content">
-                    <div>
-                        <h4 className="title-4">Sed ut perspiciatis unde omnis</h4>
-                        <p className="paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-                    </div>
-                </div>
-            </section>
+            <About />
 
             {/* SKILLS SECTION */}
             <section className="skills">

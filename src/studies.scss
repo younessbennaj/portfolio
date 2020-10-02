@@ -1,4 +1,7 @@
 .studies {
+    &-inner {
+        visibility: hidden;
+    }
 
     @include mobile-s {
         padding: $margin-m;
@@ -18,17 +21,9 @@
         display: inline-block;
         box-sizing: border-box;
         padding-right: $margin-l;
-        position: relative;
-        height: 245px;
-        width: 500px;
 
         &-inner {
-            position: absolute;
-            width: 100%;
-            padding-right: 80px;
-            box-sizing: border-box;
-            bottom: -300px;
-            opacity: 0;
+
         }
 
         @include mobile-s {

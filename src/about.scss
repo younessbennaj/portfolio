@@ -16,7 +16,11 @@
         height: 100%;
         box-sizing: border-box;
         padding-left: $margin-l;
-        display: inline-block;
+        display: inline-flex;
+
+        &-inner {
+
+        }
 
         @include mobile-s {
             padding: $margin-m;
@@ -42,6 +46,10 @@
         justify-content: center;
         height: 100%;
         box-sizing: border-box;
+
+        &-inner {
+
+        }
 
         @include mobile-s {
             width: 100%;
