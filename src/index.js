@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Studies from "./components/Studies";
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 import "./style.scss";
 
@@ -26,22 +27,7 @@ const App = () => {
             <Hero />
             <Studies />
             <About />
-
-            {/* SKILLS SECTION */}
-            <section className="skills">
-                <h2 className="title-2">Discover my differents skills</h2>
-                <p className="title-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                <div className="skills__items">
-                    <div className="skills__item"><img src="" alt="" /></div>
-                    <div className="skills__item"><img src="" alt="" /></div>
-                    <div className="skills__item"><img src="" alt="" /></div>
-                    <div className="skills__item"><img src="" alt="" /></div>
-                    <div className="skills__item"><img src="" alt="" /></div>
-                    <div className="skills__item"><img src="" alt="" /></div>
-                    <div className="skills__item"><img src="" alt="" /></div>
-                    <div className="skills__item"><img src="" alt="" /></div>
-                </div>
-            </section>
+            <Skills />
 
             {/* CONTACT SECTION */}
             <section className="contact">

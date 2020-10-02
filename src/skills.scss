@@ -1,6 +1,8 @@
 .skills {
     text-align: center;
     padding-top: 150px;
+    
+    &-inner {visibility: hidden;}
 
     @include mobile-s {
         height: max-content;
