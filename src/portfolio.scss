@@ -46,7 +46,9 @@
 }
 
 .portfolio-card {
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    // border: 1px solid rgba(0, 0, 0, 0.5);
+    @include shadow-dreamy;
+    border-radius: 3px;
 
     img {
         width: 100%;

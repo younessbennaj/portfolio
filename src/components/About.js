@@ -30,7 +30,7 @@ const About = () => {
     }, [onScreen]);
 
     return (
-        <section className="about" ref={section}>
+        <section className="about" ref={section} id="about">
             <div className="about-inner" ref={el => about = el}>
                 <div className="about__image">
                     <div className="about__image-inner" ref={el => image = el}>

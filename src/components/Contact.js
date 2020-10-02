@@ -31,7 +31,7 @@ const Contact = () => {
 
     }, [onScreen]);
     return (
-        <section className="contact" ref={section}>
+        <section className="contact" ref={section} id="contact">
             <div className="contact-inner" ref={el => contact = el}>
                 <p className="title-3" ref={el => title = el}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore

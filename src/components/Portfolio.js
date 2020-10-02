@@ -31,7 +31,7 @@ const Portfolio = () => {
 
     }, [onScreen]);
     return (
-        <section className="portfolio" ref={section}>
+        <section className="portfolio" ref={section} id="portfolio">
             <div className="portfolio-inner" ref={el => portfolio = el}>
                 <h2 className="title-2" ref={el => title = el}>
                     <div className="title-2-line">
