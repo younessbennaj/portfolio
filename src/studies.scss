@@ -1,4 +1,9 @@
 .studies {
+    overflow: hidden;
+    
+    &-inner {
+        visibility: hidden;
+    }
 
     @include mobile-s {
         padding: $margin-m;
@@ -9,9 +14,9 @@
     }
 
     @include laptop {
-        height: 750px;
+        height: max-content;
         box-sizing: border-box;
-        padding: 120px 0px 120px $margin-l;
+        padding: 60px 0px 200px $margin-l;
     }
 
     &__item {
@@ -19,10 +24,15 @@
         box-sizing: border-box;
         padding-right: $margin-l;
 
+        &-inner {
+
+        }
+
         @include mobile-s {
             padding-right: 0;
             display: block;
             width: 100%;
+            padding: 20px 0;
         }
 
         @include tablet {

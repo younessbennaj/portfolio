@@ -1,5 +1,9 @@
 .portfolio {
 
+    &-inner {
+        visibility: hidden;
+    }
+
     @include mobile-s {
         padding: 80px $margin-m 132px $margin-m;
     }

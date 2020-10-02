@@ -1,17 +1,30 @@
 .contact {
-    display: flex;
-    align-items: center;
     background-color: #F5F5F5;
+    overflow: hidden;
+
+    &-inner{
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+
+        @include mobile-s {
+            text-align: center;
+            flex-direction: column;
+        }
+
+        @include laptop {
+            text-align: left;
+            flex-direction: row;
+
+        }
+    }
+    
 
      @include mobile-s {
-        text-align: center;
-        flex-direction: column;
         padding: 40px $margin-m;
     }
 
     @include laptop {
-        text-align: left;
-        flex-direction: row;
         padding: 90px 144px 90px $margin-l;
     }
 

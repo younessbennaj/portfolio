@@ -1,6 +1,15 @@
 .title-2 {
     font-weight: 400;
-    letter-spacing: -1.5%;
+
+    &-line {
+
+        overflow: hidden;
+
+        &-inner {
+            
+        }
+
+    }
 
     @include mobile-s {
         font-size: 30px;
@@ -23,6 +32,16 @@
     font-weight: 200;
     line-height: 50px;
     letter-spacing: -1.5%;
+
+    &-line {
+
+        overflow: hidden;
+
+        &-inner {
+            
+        }
+
+    }
 
     @include mobile-s {
         font-size: 21px;

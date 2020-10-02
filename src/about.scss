@@ -2,6 +2,12 @@
     width: 100vw;
     background-color: #F5F5F5;
     padding: $margin-l 0;
+    overflow: hidden;
+
+    &-inner {
+        visibility: hidden;
+        height: 100%;
+    }
 
     @include tablet {
         height: max-content;
@@ -16,7 +22,11 @@
         height: 100%;
         box-sizing: border-box;
         padding-left: $margin-l;
-        display: inline-block;
+        display: inline-flex;
+
+        &-inner {
+            overflow: hidden;
+        }
 
         @include mobile-s {
             padding: $margin-m;
@@ -42,6 +52,10 @@
         justify-content: center;
         height: 100%;
         box-sizing: border-box;
+
+        &-inner {
+
+        }
 
         @include mobile-s {
             width: 100%;
