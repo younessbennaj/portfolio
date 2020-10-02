@@ -13,7 +13,7 @@ const Skills = () => {
     let items = useRef(null);
 
     //UI State 
-    const onScreen = useOnScreen(section, 0, "-200px");
+    const onScreen = useOnScreen(section, 0, "-100px");
 
     const [isAnimated, setIsAnimated] = useState(false);
 
@@ -21,8 +21,6 @@ const Skills = () => {
 
         let headline = title.firstElementChild;
         let subHeadline = subtitle.firstElementChild;
-
-        console.log(items.children);
 
         if (onScreen && !isAnimated) {
             //Lunch animation only the first time we scroll on the section

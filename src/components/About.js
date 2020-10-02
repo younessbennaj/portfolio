@@ -19,14 +19,12 @@ const About = () => {
 
         if (onScreen && !isAnimated) {
             setIsAnimated(true);
-            console.log('visible');
-            TweenMax.to(about, 0, { css: { visibility: 'visible' } });
 
-            console.log(image.firstElementChild)
+            TweenMax.to(about, 0, { css: { visibility: 'visible' } });
 
             tl.from(image, 1.2, { y: 1280, ease: Power3.easeOut }, 'Start')
                 .from(image.firstElementChild, 2, { scale: 1.6, ease: Power3.easeOut }, .2)
-                .from(content, 1, { y: 200, ease: Power3.easeOut }, .2)
+                .from(content, 1, { y: 800, ease: Power3.easeOut }, .8)
         }
 
     }, [onScreen]);
