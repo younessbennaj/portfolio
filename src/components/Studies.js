@@ -56,7 +56,7 @@ const Studies = () => {
                     <div className="studies__item-inner" ref={el => item1 = el}>
                         <h4 className="title-4">Sed ut perspiciatis</h4>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-                        <button>Learn more</button>
+                        <button className="btn btn-outline">Learn more</button>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ const Studies = () => {
                     <div className="studies__item-inner" ref={el => item2 = el}>
                         <h4 className="title-4">Lorem ipsum dolor</h4>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-                        <button>Learn more</button>
+                        <button className="btn btn-outline">Learn more</button>
                     </div>
                 </div>
             </div>
