@@ -14,6 +14,7 @@ import Portfolio from "./components/Portfolio";
 import Foorter from "./components/Footer";
 
 import "./style.scss";
+import "../assets/icon/icofont.scss";
 
 let tl = new TimelineLite();
 

@@ -22,9 +22,9 @@ const Footer = () => {
                 <p>© 2020 - Youness Bennaj</p>
                 <ul>
                     <li>Follow me:</li>
-                    <li><a href="#">t</a></li>
-                    <li><a href="#">g</a></li>
-                    <li><a href="#">l</a></li>
+                    <li><a href="https://twitter.com/younessbennaj" target="_blank"><i className="icofont-twitter"></i></a></li>
+                    <li><a href="https://github.com/younessbennaj?tab=repositories" target="_blank"><i className="icofont-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/youness-bennaj-a632a9126/" target="_blank"><i className="icofont-linkedin"></i></a></li>
                 </ul>
             </div>
         </footer>
