@@ -6,6 +6,8 @@
     width: 100vw;
     box-sizing: border-box;
     overflow: hidden;
+    position: relative;
+    z-index: 0;
 
     @include mobile-s {
         height: 90vh;

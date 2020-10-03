@@ -3,11 +3,6 @@ import ReactDOM from "react-dom";
 
 import { TweenMax, TimelineLite, Power3, gsap } from "gsap";
 
-//Assets
-import wave from "../assets/wave.jpg";
-import heroBg from "../assets/hero-bg.jpg";
-import profile from "../assets/me.jpg";
-
 //Components 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
