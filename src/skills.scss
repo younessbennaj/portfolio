@@ -21,6 +21,24 @@
         height: 608px;
     }
 
+    
+
+    h3, h2 {
+
+        @include mobile-s {
+            margin: 0 $margin-m;
+            text-align: left;
+        }
+        @include tablet {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    h2 {
+        margin-bottom: $margin-m;
+    }
+
     p {
         width: 80%;
         margin: 0 auto;

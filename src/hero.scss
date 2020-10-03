@@ -68,6 +68,7 @@
 
     &__image-container {
         // background-color: #f5f5f5;
+        position: relative;
 
         @include mobile-s {
             display: none;
@@ -82,10 +83,55 @@
             align-items: center;
             box-sizing: border-box;
         }
+
+        .rectangle {
+            background-color: #F5F5F5;
+            height: 40%;
+            width: 60%;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            right: 0;
+        }
     }
 
     &__image {
-        overflow: hidden;
+        position: relative;
+        z-index: 2;
+
+        &-inner {
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+        }
+
+        .circle {
+            z-index: 1;
+            display: block;
+            background-color: $blue;
+            position: absolute;
+            top: -13%;
+            left: -20%;
+
+
+            @include laptop {
+                height: 150px;
+                width: 150px;
+                border-radius: 150px;
+            }
+
+            @include laptop-l {
+                height: 180px;
+                width: 180px;
+                border-radius: 180px;
+            }
+
+            @include screen-xl {
+                height: 200px;
+            width: 200px;
+            border-radius: 100px;
+             }
+    }
     }
 
     &__title {

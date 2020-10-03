@@ -12,7 +12,7 @@ const About = () => {
     let section = useRef(null);
     let about = useRef(null);
 
-    const onScreen = useOnScreen(section, 0, "-100px");
+    const onScreen = useOnScreen(section, 0, "-300px 0px 0px -100px");
     const [isAnimated, setIsAnimated] = useState(false);
 
     useEffect(() => {

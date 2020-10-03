@@ -8,6 +8,8 @@ const Hero = () => {
     let hero = useRef(null);
     let image = useRef(null);
     let content = useRef(null);
+    let rectangle = useRef(null);
+    let circle = useRef(null);
 
     useEffect(() => {
 
@@ -29,7 +31,9 @@ const Hero = () => {
 
         //Image animation 
         tl.from(image, 1.2, { y: 1280, ease: Power3.easeOut }, 'Start')
-            .from(image.firstElementChild, 2, { scale: 1.6, ease: Power3.easeOut }, .2)
+            .from(image.children[1].firstElementChild, 2, { scale: 1.6, ease: Power3.easeOut }, .2)
+            .from(rectangle, 1, {opacity: 0, x: 800, ease: Power3.easeOut}, .2)
+            .from(circle, 1, {opacity: 0, y: -800, ease: Power3.easeOut}, .1)
     }, [tl]);
     return ( 
         <main className="hero" ref={el => hero = el}>
@@ -49,8 +53,11 @@ const Hero = () => {
                 </div>
                 <hr />
                 <div className="hero__image-container">
+                    {/* <div className="circle-container" ref={el => circle = el}> */}
                     <div className="hero__image" ref={el => image = el}>
-                        {/* <img src="https://via.placeholder.com/375x530" alt="" /> */}
+                        <div className="circle" ref={el => circle = el}>
+                        </div>
+                        <div className="hero__image-inner">
                         <img 
                             srcSet="
                                     https://via.placeholder.com/170x256 170w,
@@ -65,6 +72,10 @@ const Hero = () => {
                                     (min-width: 768px) 170px"
 
                             alt="Youness Bennaj" />
+                        </div>
+                    </div>
+                    {/* </div> */}
+                    <div className="rectangle" ref={el => rectangle = el}>
                     </div>
                 </div>
             </main>
