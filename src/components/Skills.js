@@ -52,10 +52,14 @@ const Skills = () => {
                     </div>
                 </h3>
                 <div className="skills__items" ref={el => items = el}>
-
-                    {[1, 2, 3, 4, 5, 6, 7, 8].map(val => {
-                        return <div key={val} className="skills__item"><img src="" alt="" /></div>;
-                    })}
+                    <div className="skills__item"><img src="https://img.icons8.com/ios-glyphs/120/000000/html-5.png" /></div>
+                    <div className="skills__item"><img src="https://img.icons8.com/ios-filled/100/000000/css3.png" /></div>
+                    <div className="skills__item"><img src="https://img.icons8.com/ios/100/000000/javascript.png" /></div>
+                    <div className="skills__item"><img src="https://img.icons8.com/ios-glyphs/160/000000/react.png" /></div>
+                    <div className="skills__item"><img src="https://img.icons8.com/ios-filled/50/000000/sass.png" /></div>
+                    <div className="skills__item"><img src="https://img.icons8.com/wired/128/000000/webpack.png" /></div>
+                    <div className="skills__item"><img src="https://img.icons8.com/wired/64/000000/babel.png" /></div>
+                    <div className="skills__item"><img src="https://img.icons8.com/windows/128/000000/npm.png" /></div>
                 </div>
             </div>
         </section>
