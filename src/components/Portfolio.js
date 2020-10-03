@@ -12,7 +12,7 @@ const Portfolio = () => {
     let subtitle = useRef(null);
     let cards = useRef(null);
 
-    const onScreen = useOnScreen(section, 0, "-300px 0px 0px -200px");
+    const onScreen = useOnScreen(section, 0, "-400px 0px 0px -200px");
     const [isAnimated, setIsAnimated] = useState(false);
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const Portfolio = () => {
 
             tl.from(headline.firstElementChild, .8, { y: 80, delay: 0.8, ease: Power3.easeOut }, 'Start')
                 .from(subHeadline.firstElementChild, .8, { x: -1800, ease: Power3.easeOut }, .8)
-                .staggerFrom(cards.children, 1, { x: 1800, ease: Power3.easeOut }, .8)
+                .staggerFrom(cards.children, 1, { x: 1800, opacity: 0, ease: Power3.easeOut }, .8)
         }
 
     }, [onScreen]);
