@@ -48,8 +48,7 @@ const Hero = () => {
                             <div className="hero__title-line-inner">a JavaScript Developer.</div>
                         </div>
                     </h1>
-                    {/* <p className="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita possimus laborum earum adipisci dolores architecto perspiciatis ducimus itaque commodi est, ipsum, sit, aliquid quod! Soluta consequuntur saepe aperiam fuga beatae.</p> */}
-                    <button className="hero__btn">Get in touch</button>
+                    <button className="hero__btn"><a href="#contact">Get in touch</a></button>
                 </div>
             </div>
             <hr />
