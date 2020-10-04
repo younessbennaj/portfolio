@@ -8,15 +8,27 @@
     display: inline-block;
     cursor: pointer;
 
+    a {
+        text-decoration: none;
+    }
+
     &-primary {
         background-color: $blue;
         border: 1px solid $blue;
         color: $white;
+
+        a {
+            color: $white;
+        }
     }
 
     &-outline {
         background-color: $white;
         color: $blue;
         border: 1px solid $blue;
+
+        a {
+            color: $blue;
+        }
     }
 }
