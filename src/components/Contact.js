@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import { useOnScreen } from "../useOnScreen";
 import { TweenMax, TimelineLite, Power3 } from "gsap";
 
+// Assets
+import resume from "../../assets/younessbennaj.pdf";
+
 let tl = new TimelineLite();
 
 const Contact = () => {
@@ -36,8 +39,12 @@ const Contact = () => {
                 <p className="title-3" ref={el => title = el}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 </p>
-                <button className="btn btn-primary" ref={el => resumeButton = el}>My resume</button>
-                <button className="btn btn-outline" ref={el => contactButton = el}>Contact me</button>
+                <button className="btn btn-primary" ref={el => resumeButton = el}>
+                    <a href={resume} target="_blank">My resume</a>
+                </button>
+                <button className="btn btn-outline" ref={el => contactButton = el}>
+                    <a href="mailto:youness.bennaj@gmail.com">Contact me</a>
+                </button>
             </div>
         </section>
     );

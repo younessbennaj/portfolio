@@ -1,4 +1,6 @@
 import React from 'react';
+// Assets
+import resume from "../../assets/younessbennaj.pdf";
 
 const Footer = () => {
     return (
@@ -11,8 +13,8 @@ const Footer = () => {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div className="footer__button-group">
-                    <button className="btn btn-primary">Contact me</button>
-                    <button className="btn btn-outline">My resume</button>
+                    <button className="btn btn-primary"><a href={resume} target="_blank">My resume</a></button>
+                    <button className="btn btn-outline"><a href="mailto:youness.bennaj@gmail.com">Contact me</a></button>
                 </div>
             </div>
 
