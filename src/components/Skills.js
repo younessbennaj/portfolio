@@ -35,7 +35,7 @@ const Skills = () => {
 
     }, [onScreen]);
     return (
-        <section className="skills" ref={section}>
+        <section className="skills" ref={section} id="skills">
             <div className="skills-inner" ref={el => skills = el}>
                 <h2 className="title-2" ref={el => title = el}>
                     <div className="title-2-line">
