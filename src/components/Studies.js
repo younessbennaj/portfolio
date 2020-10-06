@@ -62,7 +62,7 @@ const Studies = () => {
 
                 <div className="studies__item">
                     <div className="studies__item-inner" ref={el => item2 = el}>
-                        <h4 className="title-4">MSc Pro Transformation Digitale</h4>
+                        <h4 className="title-4">MSc Pro Transformation Digitale (Présent)</h4>
                         <p>Cette formation offre les outils pour mettre en œuvre, par la technologie et l’informatique, une transformation digitale adaptée à chaque domaine d’activité. Les étudiants apprennent à s’adapter aux contraintes matérielles et architecturales propres à chaque secteur d’activité. La MSc Pro Transformation Digitale forme l’étudiant au métier de manager des systèmes d’information.</p>
                         <button className="btn btn-outline"><a href="">En savoir plus</a></button>
                     </div>
