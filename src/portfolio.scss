@@ -49,12 +49,29 @@
     // border: 1px solid rgba(0, 0, 0, 0.5);
     @include shadow-dreamy;
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
 
     img {
         width: 100%;
     }
 
+    button {
+        margin-top: auto;
+        width: max-content;
+        @include mobile-s{
+            margin-left: 32px;
+        }
+    
+        @include laptop-l {
+            margin-left: 64px;
+        }
+    }
+
     &__content {
+        display: flex; 
+        flex-direction: column;
 
         @include mobile-s{
             padding: 32px;
