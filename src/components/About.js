@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { useOnScreen } from "../useOnScreen";
 import { TweenMax, TimelineLite, Power3 } from "gsap";
 
+import aboutImage from "../../assets/about.jpg";
+
 let tl = new TimelineLite();
 
 const About = () => {
@@ -34,17 +36,19 @@ const About = () => {
             <div className="about-inner" ref={el => about = el}>
                 <div className="about__image">
                     <div className="about__image-inner" ref={el => image = el}>
-                        <img src="https://via.placeholder.com/750x440" alt="" />
+                        <img src={aboutImage} alt="" />
                     </div>
                 </div>
                 <div className="about__content">
                     <div className="about__content-inner" ref={el => content = el}>
                         <h4 className="title-4">
-                            Sed ut perspiciatis unde omnis
+                            A propos de moi
                     </h4>
                         <p className="paragraph">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
-                    </p>
+                            Je suis actuellement à la recherche d'un contrat de professionnalisation dans le cadre de la formation MSc Pro d'Epitech.
+                            Je peux exercer en tant que développeur Front End, notament le développement d'application avec l'écosystème React JS. Je suis également ouvert
+                            à toutes autres missions impliquant du développement JS.
+                        </p>
                     </div>
                 </div>
             </div>

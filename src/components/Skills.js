@@ -40,14 +40,14 @@ const Skills = () => {
                 <h2 className="title-2" ref={el => title = el}>
                     <div className="title-2-line">
                         <div className="title-2-line-inner">
-                            Discover my differents skills
+                            Découvrez mes différentes compétences
                         </div>
                     </div>
                 </h2>
                 <h3 className="title-3" ref={el => subtitle = el}>
                     <div className="title-3-line">
                         <div className="title-3-line-inner">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            Voici une rapide présentation des différents langages et technologies que je maitrise:
                         </div>
                     </div>
                 </h3>
