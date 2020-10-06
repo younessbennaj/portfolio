@@ -8,9 +8,9 @@ const Footer = () => {
             <div className="footer__nav">
                 <ul>
                     <li><a href="#home"><strong>Home</strong></a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">À propos</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contacts</a></li>
                 </ul>
                 <div className="footer__button-group">
                     <button className="btn btn-primary"><a href={resume} target="_blank">My resume</a></button>

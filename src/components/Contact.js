@@ -37,13 +37,13 @@ const Contact = () => {
         <section className="contact" ref={section} id="contact">
             <div className="contact-inner" ref={el => contact = el}>
                 <p className="title-3" ref={el => title = el}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    N'hésitez pas à télécharger mon CV au format PDF, ainsi que de me contacter par mail pour en savoir plus.
                 </p>
                 <button className="btn btn-primary" ref={el => resumeButton = el}>
-                    <a href={resume} target="_blank">My resume</a>
+                    <a href={resume} target="_blank">Téléchargez mon CV</a>
                 </button>
                 <button className="btn btn-outline" ref={el => contactButton = el}>
-                    <a href="mailto:youness.bennaj@gmail.com">Contact me</a>
+                    <a href="mailto:youness.bennaj@gmail.com">Contactez moi</a>
                 </button>
             </div>
         </section>

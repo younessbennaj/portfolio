@@ -20,7 +20,7 @@
     }
 
     &__item {
-        display: inline-block;
+        display: inline-flex;
         box-sizing: border-box;
         padding-right: $margin-l;
 
@@ -38,7 +38,7 @@
         @include tablet {
             padding-right: $margin-l;
             padding-right: $margin-m;
-            display: inline-block;
+            display: inline-flex;
             width: 50%;
         }
     

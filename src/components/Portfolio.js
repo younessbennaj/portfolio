@@ -36,14 +36,14 @@ const Portfolio = () => {
                 <h2 className="title-2" ref={el => title = el}>
                     <div className="title-2-line">
                         <div className="title-2-line-inner">
-                            You can check my differents projects
+                            Mes projets personnels en développement front end
                         </div>
                     </div>
                 </h2>
                 <h3 className="title-3 portfolio__subtitle" ref={el => subtitle = el}>
                     <div className="title-3-line">
                         <div className="title-3-line-inner">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            Voici quelques uns de mes projets terminés ou en cours de réalisation afin de vous présenter mes compétences et mon savoir-faire.
                         </div>
                     </div>
                 </h3>

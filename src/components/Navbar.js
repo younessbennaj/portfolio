@@ -10,17 +10,17 @@ const Navar = () => {
                 {/* <a href="#" className="navigation-mobile__close">close</a> */}
                 <ul className="navigation-mobile__list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">À propos</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contacts</a></li>
                 </ul>
             </nav>
             <nav className="navigation-desktop">
                 <ul className="navigation-desktop__list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">À propos</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contacts</a></li>
                 </ul>
             </nav>
         </header>
