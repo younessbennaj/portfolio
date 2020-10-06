@@ -65,3 +65,9 @@
         }
     }
 }
+
+.button-container {
+    padding-top: $margin-l;
+    display: flex;
+    justify-content: center;
+}
