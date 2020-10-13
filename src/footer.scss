@@ -24,7 +24,7 @@
             // align-items: flex-start;
         }
 
-        @include mobile-m {
+        @include mobile-l {
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
@@ -44,7 +44,7 @@
                 text-align: center;
             }
 
-            @include mobile-m {
+            @include mobile-l {
                 text-align: left;
             }
 
@@ -70,7 +70,7 @@
             display: block;
             margin-bottom: 16px;
 
-            @include mobile-m {
+            @include mobile-l {
                 margin-left: 45px;
             }
         }
