@@ -79,7 +79,7 @@ const Portfolio = () => {
                                 Une application type réseau social réalisé avec React et son ecosytème. Utilsation de firebase pour le back-end et le service d'authentification. Pour le style des composants, utilisation de styled-components et mise en place d'un storybook. Utilisation d'un état global avec React-Redux.
                             </p>
                         </div>
-                        <button className="btn btn-outline"><a target="_blank" href="https://github.com/younessbennaj/react-social-app">Dépôt Github</a></button>
+                        <button className="btn btn-outline"><a target="_blank" href="https://social-app-younessbennaj.herokuapp.com/">Voir l'app</a></button>
                     </div>
                     <div className="portfolio-card">
                         <img src={socialAppImage} alt="" />
