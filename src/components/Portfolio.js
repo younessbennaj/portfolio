@@ -3,6 +3,7 @@ import { useOnScreen } from "../useOnScreen";
 import { TweenMax, TimelineLite, Power3 } from "gsap";
 
 //Images
+import countryQuiz from "../../assets/projects/country-quiz.png";
 import socialAppImage from "../../assets/projects/social-app.png";
 import baseConverterImage from "../../assets/projects/base-converter.png";
 import workoutJournal from "../../assets/projects/workout-journal.png";
@@ -61,6 +62,16 @@ const Portfolio = () => {
                 </h3>
                 <div className="portfolio__items" ref={el => cards = el}>
                     <div className="portfolio-card">
+                        <img src={countryQuiz} alt="" />
+                        <div className="portfolio-card__content">
+                            <h6 className="title-4">Country Quiz App</h6>
+                            <p className="paragraph">
+                                Creation d'un quizz sur les capitales du monde utilisant l'API https://restcountries.eu/. Utilisation de la librarie React pour concevoir la solution. L'utilisateur peut répondre aux question et lorsqu'il a faux, il est dirigé vers la page des scores pour obtenir son résulat.
+                            </p>
+                        </div>
+                        <button className="btn btn-outline"><a target="_blank" href="https://affectionate-bell-b6f3ec.netlify.app/">Voir l'app</a></button>
+                    </div>
+                    <div className="portfolio-card">
                         <img src={socialAppImage} alt="" />
                         <div className="portfolio-card__content">
                             <h6 className="title-4">React Social App</h6>
@@ -68,7 +79,7 @@ const Portfolio = () => {
                                 Une application type réseau social réalisé avec React et son ecosytème. Utilsation de firebase pour le back-end et le service d'authentification. Pour le style des composants, utilisation de styled-components et mise en place d'un storybook. Utilisation d'un état global avec React-Redux.
                             </p>
                         </div>
-                        <button className="btn btn-outline"><a target="_blank" href="https://github.com/younessbennaj/react-social-app">Dépôt Github</a></button>
+                        <button className="btn btn-outline"><a target="_blank" href="https://social-app-younessbennaj.herokuapp.com/">Voir l'app</a></button>
                     </div>
                     <div className="portfolio-card">
                         <img src={socialAppImage} alt="" />
