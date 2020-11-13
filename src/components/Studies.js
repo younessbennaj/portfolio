@@ -14,7 +14,7 @@ const Studies = () => {
 
     let title = useRef(null);
 
-    //UI State 
+    //UI State
     const onScreen = useOnScreen(section, 0, "-100px");
 
     const [isAnimated, setIsAnimated] = useState(false);
@@ -52,7 +52,7 @@ const Studies = () => {
                     </div>
                 </h2>
 
-                <div className="studies__item" >
+                <div className="studies__item">
                     <div className="studies__item-inner" ref={el => item1 = el}>
                         <h4 className="title-4">IFOCOP PARIS XI - Développeur full stack JS (2016 - 2017)</h4>
                         <p>Formation à la programmation JavaScript, aussi bien la dimension front-end (création d’interfaces claires et ergonomiques, intégration des différentes pages), ou back-end (développement et programmation des fonctionnalités et bases de données).</p>
@@ -63,7 +63,7 @@ const Studies = () => {
                 <div className="studies__item">
                     <div className="studies__item-inner" ref={el => item2 = el}>
                         <h4 className="title-4">MSc Pro Transformation Digitale (Présent)</h4>
-                        <p>Cette formation offre les outils pour mettre en œuvre, par la technologie et l’informatique, une transformation digitale adaptée à chaque domaine d’activité. Les étudiants apprennent à s’adapter aux contraintes matérielles et architecturales propres à chaque secteur d’activité. La MSc Pro Transformation Digitale forme l’étudiant au métier de manager des systèmes d’information.</p>
+                        <p>Au delà de consolider mes connaissances techniques et m’ouvrir à d’autres langages de programmation, le master que j’entreprends développe avant tout l’autonomie et la capacité d’adaptation des étudiants, futurs experts en informatique. Pour cela, l’étudiant va être amené à acquérir une expertise en lien avec une spécialisation.</p>
                         <button className="btn btn-outline"><a href="">En savoir plus</a></button>
                     </div>
                 </div>

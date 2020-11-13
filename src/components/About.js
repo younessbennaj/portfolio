@@ -45,9 +45,9 @@ const About = () => {
                             A propos de moi
                     </h4>
                         <p className="paragraph">
-                            Je suis actuellement à la recherche d'un contrat de professionnalisation dans le cadre de la formation MSc Pro d'Epitech.
-                            Je peux exercer en tant que développeur Front End, notament le développement d'application avec l'écosystème React JS. Je suis également ouvert
-                            à toutes autres missions impliquant du développement JS.
+                            Reprenant actuellement mes études en Master Transformation Digitale et Innovation Technologique à EPITECH en alternance. Formé au développement JavaScript au cours de mon cursus, je continue depuis à me perfectionner sur ce langage pour en comprendre les spécificités et les particularités.
+                            Riche d’une première expérience professionnelle de deux ans, en développement Front End sur une application Saas, je suis familier de la gestion de projet Agile dirigé par un Product Owner et à la collaboration entre plusieurs développeurs. Plus que la maitrise de langages de programmation et d’outils de développement ou d’organisation, je vois avant tout mon métier comme celui d’un « Problem Solver ».
+    
                         </p>
                     </div>
                 </div>
