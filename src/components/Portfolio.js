@@ -2,16 +2,10 @@ import React, { useState, useRef, useEffect } from "react";
 import { useOnScreen } from "../useOnScreen";
 import { TweenMax, TimelineLite, Power3 } from "gsap";
 
-//Images
-import countryQuiz from "../../assets/projects/country-quiz.png";
-import socialAppImage from "../../assets/projects/social-app.png";
-import baseConverterImage from "../../assets/projects/base-converter.png";
-import workoutJournal from "../../assets/projects/workout-journal.png";
-import ticTacToeGameImage from "../../assets/projects/tic-tac-toe.png";
-import userAppImage from "../../assets/projects/user-app.png";
-import jsCalculatorImage from "../../assets/projects/js-calculator.png";
-import pomodoroImage from "../../assets/projects/pomodoro.png";
-import drumMachineImage from "../../assets/projects/drum.png";
+import { projects } from "../data/projects";
+
+//Components 
+import ProjectCard from "../components/ProjectCard";
 
 let tl = new TimelineLite();
 
@@ -61,7 +55,10 @@ const Portfolio = () => {
                     </div>
                 </h3>
                 <div className="portfolio__items" ref={el => cards = el}>
-                    <div className="portfolio-card">
+                    {projects.map(project => {
+                        return <ProjectCard {...project} />
+                    })}
+                    {/* <div className="portfolio-card">
                         <img src={countryQuiz} alt="" />
                         <div className="portfolio-card__content">
                             <h6 className="title-4">Country Quiz App</h6>
@@ -151,8 +148,8 @@ const Portfolio = () => {
                         </div>
                         <button className="btn btn-outline"><a target="_blank" href="">Dépôt Github</a></button>
                     </div>
+                 */}
                 </div>
-
                 <div className="button-container">
                     <button ref={el => button = el} className="btn btn-outline"><a target="_blank" href="https://github.com/younessbennaj?tab=repositories" target="_blank">Plus sur Github</a></button>
                 </div>

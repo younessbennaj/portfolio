@@ -2,10 +2,10 @@ import React from 'react';
 
 import "../styles/style.scss";
 
-const Button = ({ label, size, color }) => {
+const Button = ({ label, size, color, url }) => {
     return (
         <button className={`btn btn-${size} btn-${color}`}>
-            <a href="">{label}</a>
+            <a href={url} target="_blank">{label}</a>
         </button>
     );
 }
