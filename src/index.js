@@ -13,7 +13,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Foorter from "./components/Footer";
 
-import "./style.scss";
+import "./styles/style.scss";
 import "../assets/icon/icofont.scss";
 
 let tl = new TimelineLite();
@@ -24,10 +24,10 @@ const App = () => {
         <div className="container">
             <Navbar />
             <Hero />
-            <Studies />
+            {/* <Studies />
             <About />
             <Skills />
-            <Contact />
+            <Contact /> */}
             <Portfolio />
             <Foorter />
         </div>

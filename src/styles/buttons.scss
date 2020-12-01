@@ -1,0 +1,97 @@
+.btn {
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid $gray;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $black;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+
+    //Button Size
+
+    //Small button size
+    &-small {
+
+        a {
+            padding: 0.75rem 1.75rem;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+    }
+
+    //Medium button size
+    &-medium {
+        a {
+            padding: 1rem 2rem;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    //Large button size 
+    &-large {
+        a {
+         padding: 1.25rem 2.25rem;
+         font-size: 22px;
+         line-height: 30px;
+        }
+    }
+
+    //Button Colors 
+    &-primary {
+        background-color: $primary;
+        border: none;
+
+        &:hover {
+            background-color: $dark-primary;
+        }
+
+        a {
+            color: $white;
+        }
+    }
+
+    &-secondary {
+        background-color: $light-primary;
+        border: none;
+
+        // &:hover {
+        //     background-color: $dark-primary;
+        // }
+
+        a {
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+
+    // &-primary {
+    //     background-color: $blue;
+    //     border: 1px solid $blue;
+    //     color: $white;
+
+    //     a {
+    //         color: $white;
+    //     }
+    // }
+
+    &-outline {
+        background-color: $white;
+        color: $blue;
+        border: 1px solid $blue;
+
+        a {
+            color: $blue;
+        }
+    }
+}
