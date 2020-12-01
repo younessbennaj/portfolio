@@ -6,6 +6,7 @@ import { projects } from "../data/projects";
 
 //Components 
 import ProjectCard from "../components/ProjectCard";
+import Button from "./Button";
 
 let tl = new TimelineLite();
 
@@ -15,8 +16,8 @@ const Portfolio = () => {
     let portfolio = useRef(null);
     let title = useRef(null);
     let subtitle = useRef(null);
-    let cards = useRef(null);
-    let button = useRef(null);
+    // let cards = useRef(null);
+    // let button = useRef(null);
 
     const onScreen = useOnScreen(section, 0, "-400px 0px 0px -200px");
     const [isAnimated, setIsAnimated] = useState(false);
@@ -32,8 +33,8 @@ const Portfolio = () => {
 
             tl.from(headline.firstElementChild, .8, { y: 80, delay: 0.8, ease: Power3.easeOut }, 'Start')
                 .from(subHeadline.firstElementChild, .8, { x: -1800, ease: Power3.easeOut }, .8)
-                .staggerFrom(cards.children, 1, { x: 1800, opacity: 0, ease: Power3.easeOut }, .8)
-                .from(button, 1, { y: 300, opacity: 0, ease: Power3.easeOut }, 1)
+            // .staggerFrom(cards.children, 1, { x: 1800, opacity: 0, ease: Power3.easeOut }, .8)
+            // .from(button, 1, { y: 300, opacity: 0, ease: Power3.easeOut }, 1)
         }
 
     }, [onScreen]);
@@ -43,7 +44,7 @@ const Portfolio = () => {
                 <h2 className="title-2" ref={el => title = el}>
                     <div className="title-2-line">
                         <div className="title-2-line-inner">
-                            Mes projets personnels en développement front end
+                            Mes projets personnels
                         </div>
                     </div>
                 </h2>
@@ -54,9 +55,9 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </h3>
-                <div className="portfolio__items" ref={el => cards = el}>
+                <div className="portfolio__items">
                     {projects.map(project => {
-                        return <ProjectCard {...project} />
+                        return <ProjectCard key={project.title} {...project} />
                     })}
                     {/* <div className="portfolio-card">
                         <img src={countryQuiz} alt="" />
@@ -151,7 +152,13 @@ const Portfolio = () => {
                  */}
                 </div>
                 <div className="button-container">
-                    <button ref={el => button = el} className="btn btn-outline"><a target="_blank" href="https://github.com/younessbennaj?tab=repositories" target="_blank">Plus sur Github</a></button>
+                    <Button
+                        url="https://github.com/younessbennaj?tab=repositories"
+                        size="medium"
+                        color="secondary"
+                        label="Plus sur Github"
+                    />
+                    {/* <button ref={el => button = el} className="btn btn-secondary"><a target="_blank" href="https://github.com/younessbennaj?tab=repositories" target="_blank">Plus sur Github</a></button> */}
                 </div>
             </div>
 

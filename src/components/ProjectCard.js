@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from "../stories/Button";
+import Button from "../components/Button";
 
 const ProjectCard = ({ title, tags, description, links, image }) => {
 
@@ -13,7 +13,7 @@ const ProjectCard = ({ title, tags, description, links, image }) => {
             <div className="project-card__tags">
                 {tags.map(tag => {
                     return (
-                        <span>#{tag}</span>
+                        <span key={tag}>#{tag}</span>
                     )
                 })}
             </div>

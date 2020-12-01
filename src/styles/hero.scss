@@ -8,10 +8,11 @@
     overflow: hidden;
     position: relative;
     z-index: 0;
+    background-color: #fff;
 
     @include mobile-s {
         height: 90vh;
-        background: #F5F5F5;
+        // background: #F5F5F5;
     }
 
     @include tablet {
@@ -36,6 +37,7 @@
     }
 
     &__content {
+        background-color: #fff;
 
         @include mobile-s {
             text-align: center;
@@ -69,7 +71,7 @@
     }
 
     &__image-container {
-        // background-color: #f5f5f5;
+        background-color: #fff;
         position: relative;
 
         @include mobile-s {
@@ -87,7 +89,7 @@
         }
 
         .rectangle {
-            background-color: #F5F5F5;
+            background-color: $light-primary;
             height: 40%;
             width: 60%;
             position: absolute;
@@ -100,17 +102,23 @@
     &__image {
         position: relative;
         z-index: 2;
+        border-radius: 1.25rem;
 
         &-inner {
             overflow: hidden;
             position: relative;
             z-index: 2;
+            border-radius: 0.75rem;
+
+            img {
+                border-radius: 0.75rem;
+            }
         }
 
         .circle {
             z-index: 1;
             display: block;
-            background-color: $blue;
+            background-color: $primary;
             position: absolute;
             top: -13%;
             left: -20%;
