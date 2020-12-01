@@ -12,6 +12,7 @@
 @import "skills";
 @import "contact";
 @import "footer";
+@import "project-card";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 //Montserra 
@@ -39,4 +40,11 @@ ul {
 .container {
     position: relative;
     overflow: auto;
+}
+
+.button-group {
+    padding: 1rem 0;
+   button {
+       margin-right: 15px;
+   }
 }
