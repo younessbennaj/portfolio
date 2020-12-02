@@ -41,6 +41,12 @@
 
     //Large button size 
     &-large {
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+        &:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
         a {
          padding: 1.25rem 2.25rem;
          font-size: 22px;
@@ -81,14 +87,17 @@
         background-color: $light-primary;
         border: none;
 
-        // &:hover {
-        //     background-color: $dark-primary;
-        // }
+        &:hover {
+            a {
+                text-decoration: underline;
+            }
+        }
 
         a {
             color: $primary;
             font-weight: 600;
         }
+
     }
 
     &-outline {

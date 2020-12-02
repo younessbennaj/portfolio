@@ -2,7 +2,16 @@ import React, { useState, useRef, useEffect } from "react";
 import { useOnScreen } from "../useOnScreen";
 import { TweenMax, TimelineLite, Power3 } from "gsap";
 
+//Import components 
+import SkillCard from "./SkillCard";
+import RoundedIcon from "./RoundedIcon";
+
 let tl = new TimelineLite();
+
+const skill = {
+    title: "my skill",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa sunt eaque iure asperiores quo officia aspernatur placeat similique inventore tempore."
+}
 
 const Skills = () => {
 
@@ -10,7 +19,7 @@ const Skills = () => {
     let skills = useRef(null);
     let title = useRef(null);
     let subtitle = useRef(null);
-    let items = useRef(null);
+    // let items = useRef(null);
 
     //UI State 
     const onScreen = useOnScreen(section, 0, "-100px");
@@ -30,7 +39,7 @@ const Skills = () => {
 
             tl.from(headline.firstElementChild, 1, { x: 800, opacity: 0, delay: .8, ease: Power3.easeOut }, 'Start')
                 .from(subHeadline.firstElementChild, 1, { x: -800, opacity: 0, ease: Power3.easeOut }, .5)
-                .staggerFrom(items.children, .8, { y: 800, ease: Power3.easeOut }, .2)
+            // .staggerFrom(items.children, .8, { y: 800, ease: Power3.easeOut }, .2)
         }
 
     }, [onScreen]);
@@ -51,7 +60,12 @@ const Skills = () => {
                         </div>
                     </div>
                 </h3>
-                <div className="skills__items" ref={el => items = el}>
+                <div className="skills__items">
+                    <SkillCard {...skill} render={() => <RoundedIcon color="primary" />} />
+                    <SkillCard {...skill} render={() => <RoundedIcon color="red" />} />
+                    <SkillCard {...skill} render={() => <RoundedIcon color="green" />} />
+                </div>
+                {/* <div className="skills__items" ref={el => items = el}>
                     <div className="skills__item"><img src="https://img.icons8.com/ios-glyphs/120/000000/html-5.png" /></div>
                     <div className="skills__item"><img src="https://img.icons8.com/ios-filled/100/000000/css3.png" /></div>
                     <div className="skills__item"><img src="https://img.icons8.com/ios/100/000000/javascript.png" /></div>
@@ -60,7 +74,7 @@ const Skills = () => {
                     <div className="skills__item"><img src="https://img.icons8.com/wired/128/000000/webpack.png" /></div>
                     <div className="skills__item"><img src="https://img.icons8.com/wired/64/000000/babel.png" /></div>
                     <div className="skills__item"><img src="https://img.icons8.com/windows/128/000000/npm.png" /></div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

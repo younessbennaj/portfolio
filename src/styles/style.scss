@@ -63,4 +63,14 @@ ul {
         background-color: $primary;
         color: $white;
     }
+
+    &-red {
+        background-color: $red;
+        color: $white;
+    }
+
+    &-green {
+        background-color: $green;
+        color: $white;
+    }
 }

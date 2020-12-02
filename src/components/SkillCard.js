@@ -1,16 +1,11 @@
 import React from 'react';
 import Button from './Button';
 
-const RoundedIcon = ({ color, icon }) => {
-    return (
-        <span class={`rounded-icon rounded-icon-${color}`}>{icon}</span>
-    )
-}
-
-const SkillCard = ({ title, description }) => {
+const SkillCard = ({ title, description, render }) => {
     return (
         <div className="skill-card">
-            <RoundedIcon color="primary" icon="icon" />
+            {render()}
+            {/* <RoundedIcon color="primary" icon="icon" /> */}
             {/* <span class="rounded-icon">icon</span> */}
             <h2 className="skill-card__title">{title}</h2>
             <p className="skill-card__description">{description}</p>
