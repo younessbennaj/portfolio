@@ -64,10 +64,9 @@ const Hero = () => {
                             <div className="hero__title-line-inner">a JavaScript Developer.</div>
                         </div>
                     </h1>
-                    {/* <button className="btn btn-primary"><a href="#contact">Me contacter</a></button> */}
                     <Button 
                         size="large"
-                        url="#contact"
+                        anchor="#contact"
                         color="primary"
                         label="Me contacter"
                     />

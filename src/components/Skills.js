@@ -8,9 +8,19 @@ import RoundedIcon from "./RoundedIcon";
 
 let tl = new TimelineLite();
 
-const skill = {
-    title: "my skill",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa sunt eaque iure asperiores quo officia aspernatur placeat similique inventore tempore."
+const javascript = {
+    title: "javascript",
+    description: "Je suis passionné par le développement d’applications dans un environnement JS riche et avancé. Formé au développement JS au cours de mon cursus, je continue depuis à me perfectionner sur ce langage pour en comprendre les spécificités et les particularités."
+}
+
+const frontEnd = {
+    title: "front end",
+    description: "Je suis riche d’une première expérience de deux ans avec AngularJS. Depuis, React JS est devenu mon choix de prédilection pour toute application JS et je continue de me perfectionner. Amoureux des belles interfaces, je suis capable de les intégrer en CSS pure, avec Sass, ou en utilisant des Styled Components."
+}
+
+const backEnd = {
+    title: "back end",
+    description: "Je suis également capable de participer à la conception et au développement de nouvelles fonctionnalités sur une API en NodeJS. Je possède également une connaissance des technologies firebase et firestore."
 }
 
 const Skills = () => {
@@ -61,9 +71,9 @@ const Skills = () => {
                     </div>
                 </h3>
                 <div className="skills__items">
-                    <SkillCard {...skill} render={() => <RoundedIcon color="primary" />} />
-                    <SkillCard {...skill} render={() => <RoundedIcon color="red" />} />
-                    <SkillCard {...skill} render={() => <RoundedIcon color="green" />} />
+                    <SkillCard {...javascript} render={() => <RoundedIcon icon={"code-alt"} color="primary" />} />
+                    <SkillCard {...frontEnd} render={() => <RoundedIcon icon={"computer"} color="red" />} />
+                    <SkillCard {...backEnd} render={() => <RoundedIcon icon={"database"} color="green" />} />
                 </div>
                 {/* <div className="skills__items" ref={el => items = el}>
                     <div className="skills__item"><img src="https://img.icons8.com/ios-glyphs/120/000000/html-5.png" /></div>

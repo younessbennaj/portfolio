@@ -1,7 +1,8 @@
 import React from 'react';
 import Button from './Button';
 
-const SkillCard = ({ title, description, render }) => {
+const SkillCard = ({ title, description, render, url }) => {
+    console.log(url);
     return (
         <div className="skill-card">
             {render()}
@@ -9,7 +10,7 @@ const SkillCard = ({ title, description, render }) => {
             {/* <span class="rounded-icon">icon</span> */}
             <h2 className="skill-card__title">{title}</h2>
             <p className="skill-card__description">{description}</p>
-            <Button size="small" color="primary" label="en savoir plus" />
+            {/* <Button isLink={true} size="small" color="primary" label="en savoir plus"  /> */}
         </div>
     );
 }
