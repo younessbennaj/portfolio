@@ -11,7 +11,6 @@ const Footer = () => {
             <div className="footer__nav">
                 <ul>
                     <li><a href="#home"><strong>Home</strong></a></li>
-                    <li><a href="#about">À propos</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#contact">Contacts</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
