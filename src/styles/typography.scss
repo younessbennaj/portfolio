@@ -1,5 +1,6 @@
 .title-2 {
     font-weight: 400;
+    color: $black;
 
     &-line {
 
@@ -31,7 +32,7 @@
     font-size: 36px;
     font-weight: 200;
     line-height: 50px;
-    letter-spacing: -1.5%;
+    color: $black;
 
     &-line {
 
@@ -63,8 +64,8 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
-    letter-spacing: -1.5%;
     margin: 24px 0;
+    color: $black;
 
     @include tablet {
         font-size: 20px;
@@ -80,7 +81,7 @@
 .paragraph {
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: -1.5%;
+    color: $black;
 
     @include laptop {
         font-size: 14px;

@@ -3,13 +3,9 @@ import todoImage from "../../assets/projects/todo.png";
 import productAppImage from "../../assets/projects/product-app.png";
 import countryQuiz from "../../assets/projects/country-quiz.png";
 import socialAppImage from "../../assets/projects/social-app.png";
-import baseConverterImage from "../../assets/projects/base-converter.png";
-import workoutJournal from "../../assets/projects/workout-journal.png";
 import ticTacToeGameImage from "../../assets/projects/tic-tac-toe.png";
-import userAppImage from "../../assets/projects/user-app.png";
-import jsCalculatorImage from "../../assets/projects/js-calculator.png";
-import pomodoroImage from "../../assets/projects/pomodoro.png";
-import drumMachineImage from "../../assets/projects/drum.png";
+import cryptoAppImage from "../../assets/projects/crypto-app.png";
+
 export const projects = [
     {
         "title": "Todo App",
@@ -53,7 +49,7 @@ export const projects = [
             "node",
             "express"
         ],
-        "image": productAppImage,
+        "image": cryptoAppImage,
         "description": "Project dans le cadre de ma formation. Réalisation en équipe d'une application qui permet à un utilisateur de visualiser le cours des crypto-monnaies et les dernières news sur le sujet en fonction de ses préférences  ",
         "links": {
             "github": "https://github.com/younessbennaj/the-count-of-money",
@@ -104,8 +100,8 @@ export const projects = [
         "image": ticTacToeGameImage,
         "description": "Petit jeu du Morpion réalisé avec HTML CSS et JavaScript. Ce jeu permet à deux joueurs de s'affronter sur le même navigateur. Utilisation de l'élément Canvas et des classes ES6.",
         "links": {
-            "github": "https://github.com/younessbennaj/react-social-app",
-            "live": "https://social-app-younessbennaj.herokuapp.com/"
+            "github": "https://github.com/younessbennaj/tic-toe-game",
+            "live": ""
         },
     }
 ]
