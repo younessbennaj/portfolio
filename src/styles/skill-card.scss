@@ -1,0 +1,28 @@
+.skill-card {
+    border-radius: 0.75rem;
+    padding: 2.5rem 1.75rem;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        transform: scale(1.1);
+    }
+
+    &__title {
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 0.025em;
+        font-weight: 500;
+    }
+
+    &__description {
+        color: $dark-grey;
+        font-weight: 300;
+        font-size: 14px;
+        padding-bottom: 0.5rem;
+    }
+}

@@ -5,15 +5,19 @@
     }
 
     @include mobile-s {
-        padding: 80px $margin-m 132px $margin-m;
+        padding: 32px 16px;
+    }
+
+    @include mobile-l {
+        padding: 32px 32px;
     }
 
     @include laptop {
-        padding: 80px $margin-l 132px $margin-l;
+        padding: 32px 64px 32px 64px;
     }
 
     @include laptop-l {
-        padding: 120px $margin-l 280px $margin-l;
+        padding: 32px 64px 32px 64px;
     }
 
     &__subtitle {
@@ -82,7 +86,7 @@
 }
 
 .button-container {
-    padding-top: $margin-l;
+    padding: 64px 0;
     display: flex;
     justify-content: center;
 }
