@@ -7,10 +7,9 @@ const Navar = () => {
                 <span className="navbar__burger-icon"></span>
             </a>
             <nav id="menu-mobile" className="navigation-mobile">
-                {/* <a href="#" className="navigation-mobile__close">close</a> */}
+                <span className="navigation-mobile__close-icon"><a href="#">close</a></span>
                 <ul className="navigation-mobile__list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">À propos</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#contact">Contacts</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -19,7 +18,6 @@ const Navar = () => {
             <nav className="navigation-desktop">
                 <ul className="navigation-desktop__list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">À propos</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#contact">Contacts</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
