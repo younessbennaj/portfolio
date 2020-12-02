@@ -22,6 +22,7 @@
 
     &__items {
         display: grid;
+        padding: 32px 0;
 
         @include mobile-s {
             margin-top: 30px;
@@ -30,15 +31,12 @@
             grid-template-columns: repeat(1, 1fr);
         }
 
-        @include tablet {
+        @include laptop {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @include laptop {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
         @include laptop-l {
+            grid-template-columns: repeat(3, 1fr);
             margin-top: 0;
             grid-column-gap: 84px;
         }

@@ -1,4 +1,7 @@
 import React from 'react';
+
+import Button from './Button';
+
 // Assets
 import resume from "../../assets/younessbennaj.pdf";
 
@@ -14,8 +17,10 @@ const Footer = () => {
                     <li><a href="#portfolio">Portfolio</a></li>
                 </ul>
                 <div className="footer__button-group">
-                    <button className="btn btn-primary"><a href={resume} target="_blank">Téléchargez mon CV</a></button>
-                    <button className="btn btn-outline"><a href="mailto:youness.bennaj@gmail.com">Contactez moi</a></button>
+                    <Button size="medium" color="primary" url={resume} label="Téléchargez mon CV" />
+                    <Button size="medium" color="secondary" url="mailto:youness.bennaj@gmail.com" label="Contactez moi" />
+                    {/* <button className="btn btn-primary"><a href={resume} target="_blank">Téléchargez mon CV</a></button>
+                    <button className="btn btn-outline"><a href="mailto:youness.bennaj@gmail.com">Contactez moi</a></button> */}
                 </div>
             </div>
 
