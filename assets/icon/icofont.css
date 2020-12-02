@@ -48,6 +48,21 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ed4d";
 }
 
+.icofont-database:before
+{
+  content: "\eeff";
+}
+
+.icofont-code-alt:before
+{
+  content: "\ede6";
+}
+
+.icofont-computer:before
+{
+  content: "\eeee";
+}
+
 .icofont-xs
 {
   font-size: .5em;
