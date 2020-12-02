@@ -13,6 +13,7 @@
 @import "contact";
 @import "footer";
 @import "project-card";
+@import "skill-card";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 //Montserra 
@@ -48,4 +49,18 @@ ul {
    button {
        margin-right: 15px;
    }
+}
+
+.rounded-icon {
+    height: 48px;
+    width: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    // background-color: $primary;
+    &-primary {
+        background-color: $primary;
+        color: $white;
+    }
 }
