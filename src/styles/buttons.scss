@@ -5,6 +5,7 @@
     background-color: transparent;
     display: inline-block;
     cursor: pointer;
+    padding: 0;
 
     a {
         display: inline-flex;
@@ -48,6 +49,21 @@
     }
 
     //Button Colors 
+
+    &-default {
+        &:hover {
+            border: 1px solid $light-primary;
+        }
+
+        a {
+
+            &:hover {
+                color: $primary;
+            }
+
+        }
+
+    }
     &-primary {
         background-color: $primary;
         border: none;

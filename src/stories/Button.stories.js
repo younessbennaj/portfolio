@@ -30,6 +30,14 @@ Large.args = {
     size: "large"
 };
 
+export const Default = Template.bind({});
+
+Default.args = {
+    label: "default",
+    size: "medium",
+    color: "default"
+};
+
 export const Primary = Template.bind({});
 
 Primary.args = {

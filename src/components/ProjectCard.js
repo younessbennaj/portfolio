@@ -20,8 +20,8 @@ const ProjectCard = ({ title, tags, description, links, image }) => {
             <h2 className="project-card__title">{title}</h2>
             <p className="project-card__description">{description}</p>
             <div className="button-group">
-                <Button size="medium" color="primary" label="demo" url={links.live} />
-                <Button size="medium" label="code" url={links.github} />
+                {links.live && <Button size="medium" color="primary" label="demo" url={links.live} />}
+                <Button size="medium" color="default" label="code" url={links.github} />
             </div>
         </div>
     );
