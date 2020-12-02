@@ -67,8 +67,12 @@
 
     &__button-group {
 
+        @include mobile-s {
+            display: flex;
+            flex-direction: column;
+        }
+
         button {
-            display: block;
             margin-bottom: 16px;
 
             @include mobile-l {
