@@ -5,8 +5,25 @@ import countryQuiz from "../../assets/projects/country-quiz.png";
 import socialAppImage from "../../assets/projects/social-app.png";
 import ticTacToeGameImage from "../../assets/projects/tic-tac-toe.png";
 import cryptoAppImage from "../../assets/projects/crypto-app.png";
+import eventApp from "../../assets/projects/event-app.png";
 
 export const projects = [
+    {
+        "title": "Event App",
+        "tags": [
+            "typescript",
+            "react",
+            "responsive",
+            "styled-components",
+            "javascript"
+        ],
+        "image": eventApp,
+        "description": "Réalisation de la page de détail d'un événement. La page de détail d'un évènement permet à un salarié de voir les informations liées à l'évènement (date d'ouverture, nom, nombre de places...) et la liste des participants.",
+        "links": {
+            "github": "https://github.com/younessbennaj/event-app",
+            "live": ""
+        }
+    },
     {
         "title": "Todo App",
         "tags": [
